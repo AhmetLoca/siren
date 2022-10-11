@@ -7,24 +7,7 @@
 
 
 <p dir="auto">
-    <img align="left" width="50px" style="max-width: 100%;"
-             src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png"
-             alt="react">
- <img align="left" width="50px" style="max-width: 100%;"
-             src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/redux/redux.png"
-             alt="react-redux">
- <img align="left" width="50px" style="max-width: 100%;"
-             src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/typescript/typescript.png"
-             alt="typescript">
- <img align="left" width="50px" style="max-width: 100%;"
-             src="https://raw.githubusercontent.com/styled-components/brand/master/styled-components.png"
-             alt="styled-components">
-             <img align="left" width="50px" style="max-width: 100%;"
-             src="https://web-dev.imgix.net/image/tcFciHGuF3MxnTr1y5ue01OGLBn2/LvIq0sbMK73ycjb2yomw.svg"
-             alt="pwa">
-    <img align="left" width="50px" style="max-width: 100%;"
-             src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"
-             alt="javascript">
+
     <img align="left" width="50px" style="max-width: 100%;"
              src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png"
              alt="css">
@@ -48,19 +31,17 @@
 - Tailwindcss
 - CSS
 - Responsive Design
-- Styled Components
-- PWA
-- React Hooks
-- React memo
 
 ## Author
 
 ahmetloca
 
-
 ## Screenshots
 
 #### Desktop
+
+<img width="1440" alt="1" src="https://user-images.githubusercontent.com/43186456/195053442-9e6237c4-4bce-4c34-9183-6bcfe7304f23.png">
+
 ![image](https://user-images.githubusercontent.com/47141344/167001221-435d6f38-98d1-4f6e-af0b-96b8d261d894.png)
 ----
 ----
@@ -81,6 +62,3 @@ ahmetloca
 ----
 ----
 ![image](https://user-images.githubusercontent.com/47141344/167013023-5d5237df-79e2-436b-bd2c-47d80602e09f.png)
-
-
-
