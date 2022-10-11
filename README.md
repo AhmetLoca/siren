@@ -6,8 +6,8 @@
 
 ## Topics
 
--HTML
--CSS
+- HTML
+- CSS
 - Tailwindcss
 - Responsive Design
 
