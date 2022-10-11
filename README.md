@@ -4,28 +4,6 @@
 # [DEMO](https://computer-store-app.vercel.app/)
 
 
-
-
-<p dir="auto">
-
-    <img align="left" width="50px" style="max-width: 100%;"
-             src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png"
-             alt="css">
-    <img align="left" width="50px" style="max-width: 100%;"
-             src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/git/git.png"
-             alt="git">
-    <img align="left" width="50px" style="max-width: 100%;"
-             src="https://raw.githubusercontent.com/github/explore/78df643247d429f6cc873026c0622819ad797942/topics/github/github.png"
-             alt="github">
-    <img align="left" width="50px" style="max-width: 100%;"
-             src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/terminal/terminal.png"
-             alt="terminal">
-    <img align="left" alt="Visual Studio Code" width="50px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/visual-studio-code/visual-studio-code.png" />
-</p>
-<br />
-<br />
-
-
 ## Topics
 
 - Tailwindcss
@@ -41,10 +19,10 @@ ahmetloca
 #### Desktop
 
 <img width="1440" alt="1" src="https://user-images.githubusercontent.com/43186456/195053442-9e6237c4-4bce-4c34-9183-6bcfe7304f23.png">
+----
+----
+<img width="1440" alt="2" src="https://user-images.githubusercontent.com/43186456/195053661-086b2b29-6179-49e7-912b-a2bdd26bfdc5.png">
 
-![image](https://user-images.githubusercontent.com/47141344/167001221-435d6f38-98d1-4f6e-af0b-96b8d261d894.png)
-----
-----
 ![image](https://user-images.githubusercontent.com/47141344/167001753-55ecf076-9e2b-43de-b8fc-639bde1ecb73.png)
 ----
 ----
