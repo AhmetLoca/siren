@@ -1,9 +1,6 @@
 ## Siren
 
 
-# [DEMO](https://computer-store-app.vercel.app/)
-
-
 ## Topics
 
 - HTML
