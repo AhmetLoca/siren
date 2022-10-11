@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav::before {
+  content: "_";
+  position: absolute;
+  padding-top: 4px;
+  margin-left: -1px;
+}
+
+.pipe::before {
+  content: "|";
+  position: absolute;
+  margin-top: 5px;
+  margin-left: -16px;
+  color: lightgray;
+}
+
+.pipe2::before {
+  content: "|";
+  position: absolute;
+  margin-top: -10px;
+  margin-left: 33px;
+  color: lightgray;
+}
+
+.pipe3::before {
+  content: "|";
+  position: absolute;
+  margin-left: -10px;
+  margin-top: 2px;
+  color: lightgray;
+}
+
+.under::before {
+  content: "_";
+  position: absolute;
+  padding-top: 7px;
+  margin-left: 1px;
+}
+
+.destek-absolute {
+  position: absolute;
+  margin-left: 78rem;
+  margin-top: 85rem;
+  width: 105px;
+}
+
+.memnuniyet-absolute {
+  position: absolute;
+  margin-left: 87rem;
+  margin-top: -6rem;
+  width: 48px;
+}
+
+/* HAMBURGER MENU */
+
+.hamburger {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all 0.25s;
+  position: relative;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 3px;
+  top: 0;
+  left: 0;
+  background: #9c9aa6;
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+
+.hamburger-middle {
+  transform: translateY(7px);
+}
+
+.hamburger-bottom {
+  transform: translateY(14px);
+}
+
+.open {
+  transform: rotate(90deg);
+  transform: translateY(0px);
+}
+
+.open .hamburger-top {
+  transform: rotate(45deg) translateY(6px) translateX(6px);
+}
+
+.open .hamburger-middle {
+  display: none;
+}
+
+.open .hamburger-bottom {
+  transform: rotate(-45deg) translateY(6px) translateX(-6px);
+}

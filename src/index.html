@@ -1,0 +1,1278 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Nav Container !-->
+  <nav class="relative 
+              mx-auto 
+              p-6
+              container
+              ">
+      <div class="flex justify-end mb-2 space-x-4 items-center hidden sm:flex lg:flex">
+        <a href=""><span class="pr-4 font-thin text-xs">Sıkça Sorulan Sorular</span></a>
+        <a href=""><span class="pipe pr-4 font-thin text-xs">Başvuru Takibi </span></a>
+        <a href=""><span class="pipe pr-4 font-thin text-xs">Elektrik Kesintisi Sorgulama</span></a>
+        <a href=""><span class="pr-1 font-bold text-sm">TR</span></a>
+        <a href=""><span class="font-thin text-sm pipe3">EN</span></a>
+      </div>
+    <!-- Flex Container For All Items !-->
+    <div class="flex
+                items-center
+                justify-between
+                border-t-2
+                hidden
+                md:flex
+               ">
+            
+      <!-- Flex container for logo/menu !-->
+      <div class="flex 
+                  items-center 
+                  mt-3
+                  ">
+        <!-- Left Menu !-->
+        <div class="hidden 
+                    space-x-24
+                    font-bold 
+                    lg:flex
+                    pl-40
+                    ">
+          <a href="#" class="nav font-medium text-grayishViolet hover:text-veryDarkViolet">Kurumsal</a>
+          <a href="#" class="nav font-medium text-grayishViolet hover:text-veryDarkViolet">Hizmetler</a>
+          <a href="#" class="nav font-medium text-grayishViolet hover:text-veryDarkViolet">Medya</a>
+          <a href="#" class="nav font-medium text-grayishViolet hover:text-veryDarkViolet">Bilgilendirme</a>
+          <a href="#" class="nav font-medium text-grayishViolet hover:text-veryDarkViolet">İletişim</a>
+        </div>
+      </div>
+
+      <!-- Right Buttons Menu!-->
+      <div class="hidden
+                  items-center 
+                  space-x-6 
+                  font-bold 
+                  text-grayishViolet 
+                  sm:flex
+                  md:flex
+                  xl:flex
+                  mt-2">
+                  <button class="px-7 py-3 bg-white shadow-xl inline-block rounded-2xl">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                        <g fill="none" fill-rule="evenodd">
+                            <g fill="#486072">
+                                <g>
+                                    <g>
+                                        <g>
+                                            <path d="M12.632 0C16.7 0 20 3.265 20 7.292c0 4.027-3.299 7.291-7.368 7.291-1.601 0-3.083-.505-4.292-1.363l-6.543 6.475c-.411.407-1.078.407-1.489 0-.393-.39-.41-1.01-.051-1.419l.051-.054 6.514-6.445c-.977-1.237-1.559-2.794-1.559-4.485C5.263 3.265 8.563 0 12.632 0zm0 2.083c-2.907 0-5.264 2.332-5.264 5.209 0 2.876 2.357 5.208 5.264 5.208 2.906 0 5.263-2.332 5.263-5.208 0-2.877-2.357-5.209-5.263-5.209z" transform="translate(-1029 -57) translate(83 44) translate(916) translate(30 13)"/>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                  </button>
+                    <button class="font-bold bg-gradient-to-r from-yellow-500 to-rose-400 to-orange-400 text-sm w-50 text-white duration-500 px-12 py-3.5 mx-4 hover:bg-orange-500 rounded-2xl ">
+                    Online İşlemler
+                  </button>
+        </div>
+    </div>
+          <!-- @todo Hamburger Menu !-->
+        
+          <!--Mobile Menu  Hamburger Button -->
+          <div class="flex justify-between items-center sm:hidden">
+          <button
+          id="menu-btn"
+          class="block hamburger sm:hidden focus:outline-none"
+          type="button"
+        >
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+        <div class="flex items-center w-40 justify-between">
+        <button class="px-6 py-3 bg-white shadow-xl inline-block rounded-2xl">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+              <g fill="none" fill-rule="evenodd">
+                  <g fill="#486072">
+                      <g>
+                          <g>
+                              <g>
+                                  <path d="M12.632 0C16.7 0 20 3.265 20 7.292c0 4.027-3.299 7.291-7.368 7.291-1.601 0-3.083-.505-4.292-1.363l-6.543 6.475c-.411.407-1.078.407-1.489 0-.393-.39-.41-1.01-.051-1.419l.051-.054 6.514-6.445c-.977-1.237-1.559-2.794-1.559-4.485C5.263 3.265 8.563 0 12.632 0zm0 2.083c-2.907 0-5.264 2.332-5.264 5.209 0 2.876 2.357 5.208 5.264 5.208 2.906 0 5.263-2.332 5.263-5.208 0-2.877-2.357-5.209-5.263-5.209z" transform="translate(-1029 -57) translate(83 44) translate(916) translate(30 13)"/>
+                              </g>
+                          </g>
+                      </g>
+                  </g>
+              </g>
+          </svg>
+        </button>
+          <button class="font-bold bg-gradient-to-r from-yellow-500 to-rose-400 to-orange-400 text-sm w-20 text-white duration-500 px-2 py-1 hover:bg-orange-500 rounded-xl ">
+          Online <br> İşlemler
+          </button>
+        </div>
+      </div>
+    <!-- @todo Mobile Menu !-->
+  </nav>
+
+
+ <!-- Breadcrumb 1  !-->
+  <div class="relative">
+  <section>
+    <div class="flex flex-col px-10 bg-gray-200">
+        <div class="flex mt-5 hidden lg:inline-flex">
+            <div>
+                <span class="flex text-sm text-gray-500">          
+                     Ana Sayfa
+                  </span> 
+                </div>
+             <div>
+                <span class="flex text-sm text-gray-500"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                  </svg>          
+                     Kurumsal
+                  </span> 
+                </div>
+    
+            <div>
+            <span class="flex text-sm text-gray-500"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+              </svg>          
+                 Kariyer
+              </span> 
+            </div>
+    
+            <div>
+                <span class="flex text-orange-400 text-sm font-bold"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                  </svg>          
+                     Açık pozisyonlar
+                  </span> 
+                </div>
+          </div>
+      <div class="flex flex-col mt-5">
+        <div class="lg:hidden">
+        <span class="flex text-orange-400 text-sm font-bold"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+            </svg>
+              Kariyer'e Dön
+          </span> 
+        </div>   
+        <p class=" text-xl mb-2 font-semibold text-gray-600">Açık Pozisyonlar</p>
+      </div>
+
+
+    <form class="flex flex-col lg:flex-row mr-10 items-center py-1 lg:w-8/12">
+    <div class="flex  bg-white border shadow-xl  justify-between h-12 items-center rounded-md w-96">
+      <div class="flex flex-col ml-3">
+        <p class="text-[10px]">İş Alanı</p>
+        <p class="font-bold">Tümü</p>
+      </div>
+    
+      <div class="mr-3">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+        </svg>
+      </div>
+    </div>
+    
+    <div class="pipe2 relative flex items-center px-4 py-4">
+      <span class="pipe2"></span>
+      <svg class="absolute w-5 h-5 ml-2 pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+        <g fill="none" fill-rule="evenodd">
+            <g fill="#173A47">
+                <g>
+                    <g>
+                        <path d="M12.632 0C16.7 0 20 3.265 20 7.292c0 4.027-3.299 7.291-7.368 7.291-1.601 0-3.083-.505-4.292-1.363l-6.543 6.475c-.411.407-1.078.407-1.489 0-.393-.39-.41-1.01-.051-1.419l.051-.054 6.514-6.445c-.977-1.237-1.559-2.794-1.559-4.485C5.263 3.265 8.563 0 12.632 0zm0 2.083c-2.907 0-5.264 2.332-5.264 5.209 0 2.876 2.357 5.208 5.264 5.208 2.906 0 5.263-2.332 5.263-5.208 0-2.877-2.357-5.209-5.263-5.209z" transform="translate(-395 -216) translate(383 203) translate(12 13)"/>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </svg>
+       
+    <input type="text" 
+             name="search" 
+             placeholder="İl, İlçe, Pozisyon, Lorem Ipsum ara" 
+             autocomplete="off"
+             aria-label="Search talk"
+             class="shadow-xl pr-3 pl-10 py-3 w-96 font-semibold text-black rounded-md border-none ring-1 ring-gray-200 focus:ring-gray-500 focus:ring-2 "
+        />
+        </div>
+       </form>
+  </section>
+
+ <!-- main !-->
+ <section class="bg-gray-200">
+    <div class="relative">
+
+        <!-- absolute !-->
+        <div class="destek-absolute">
+            <img src="./assets/destek.png" alt="">
+        </div>
+
+        <div class="memnuniyet-absolute">
+            <img src="./assets/memnuniyet-dikey.png" alt="">
+        </div>
+
+        <div class="grid xl:grid-cols-4 lg:grid-cols-3 gap-4 ml-10 md:grid-cols-1 pr-5 mr-10">
+        <!-- Card 1 !-->
+        <div class="flex bg-white shadow-md w-96 lg:w-80 rounded-xl">
+            <div class="h-full overflow-hidden">
+                <div class="p-6">
+                    <p class="text-sm text-right font-light mb-2">11 Eylül 2020</p>
+                    <p class="text-lg text-yellow-500 font-bold">Pozisyon</p>
+                    <p class="text-xl font-bold mb-8">Endeks Okuma Görevlisi</p>
+                    <p class="leading-relaxed mb-8 font-extralight">Lorem ipsum dolor sit amet, consect <br> adipisicing elit consect stiple... </p>
+        
+            <div class="flex lg:flex-col">
+                <div class="flex flex-col lg:flex-row items-center justify-center pb-4">
+                    <span class="p-3 rounded-full bg-gray-700">
+                        <svg class="fill-current text-purple-700" xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17">
+                            <g fill="none" fill-rule="evenodd">
+                                <g fill="#FFF">
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <path d="M3.643 5.218c-.005-.902.016-1.803.016-2.703.004-.083.011-.164.034-.245.073-.26.263-.479.511-.586.097-.042.196-.063.3-.074 3.662-.124 7.33-.124 10.993 0 .103.011.202.032.299.074.228.099.409.292.492.527.028.079.042.159.051.242.03.897.017 1.796.008 2.694.93.02 1.86.048 2.79.089.08.01.155.023.23.05.25.092.451.292.542.542.015.045.027.089.036.133.01.058.016.117.018.177v10.87c-.004.106-.017.208-.054.309-.09.25-.291.45-.542.542-.1.036-.202.05-.309.054H.942c-.107-.004-.208-.018-.31-.054-.25-.092-.45-.291-.541-.542-.037-.101-.05-.203-.055-.31V6.137c.004-.081.012-.158.032-.236.006-.025.014-.049.023-.073.09-.25.291-.45.542-.541.1-.037.202-.05.309-.055.9 0 1.8-.006 2.701-.014zm14.51 5.648l-5.463 1.093-.003.027c-.04.264-.122.523-.239.765-.14.295-.337.562-.573.788-.237.227-.515.41-.817.537-.335.141-.695.214-1.058.214-.363 0-.724-.073-1.058-.214-.302-.128-.58-.31-.817-.537-.236-.226-.432-.493-.573-.788-.117-.242-.198-.501-.239-.765 0-.01-.002-.019-.003-.027l-5.462-1.093v5.236h16.304v-5.236zm-8.177-.2c-.136.006-.266.037-.387.1-.236.12-.413.343-.471.602-.025.105-.03.214-.016.32.012.089.036.175.072.257.046.1.109.19.186.267.078.078.168.141.268.186.11.05.228.077.348.08.12.003.242-.018.355-.063.102-.04.196-.099.278-.172.08-.074.149-.161.198-.259.04-.079.069-.163.085-.25.02-.114.018-.231-.005-.344-.05-.253-.214-.475-.437-.604-.116-.066-.246-.105-.38-.116-.03-.002-.061-.003-.094-.003zM4.57 7.044H1.848v1.975l5.818 1.164c.26-.436.644-.797 1.097-1.03.258-.13.537-.222.825-.266.113-.018.227-.025.343-.03h.139c.115.005.23.012.343.03.288.044.566.135.825.267.453.232.836.593 1.097 1.03l5.818-1.165V7.043h-2.719c-3.618.121-7.241 0-10.863 0zm9.959-1.92V3.42H5.472v1.776c3.02-.041 6.039-.097 9.057-.073z" transform="translate(-113 -461) translate(83 269) translate(20 181) translate(10 10)"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </span>   
+                    <span class="text-center px-3 pt-2 font-light">En Az 2 Yıl Tecrübe</span>
+                </div>
+            
+                <div class="flex flex-col lg:flex-row justify-center items-center pb-4">
+                    <span class="p-3 rounded-full bg-gray-700">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                            <g fill="none" fill-rule="evenodd">
+                                <g fill="#FFF">
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <path d="M9.903 9.903h2.201c.607 0 1.1.488 1.1 1.1 0 .608-.488 1.101-1.1 1.101h-3.3c-.303 0-.577-.12-.776-.318-.202-.203-.325-.476-.325-.772V6.593c0-.602.489-1.09 1.1-1.09.608 0 1.1.496 1.1 1.09v3.31zM12.466.34c5.282 1.415 8.417 6.844 7 12.126-1.415 5.282-6.843 8.417-12.125 7C2.059 18.052-1.075 12.624.34 7.342S7.184-1.075 12.466.34zm-.57 2.125c-4.107-1.1-8.33 1.338-9.43 5.445-1.102 4.108 1.337 8.33 5.444 9.432 4.108 1.1 8.33-1.337 9.432-5.445 1.1-4.108-1.337-8.331-5.445-9.432z" transform="translate(-723 -510) translate(693 269) translate(20 231) translate(10 10)"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>     
+                    </span>
+                    <span class="text-center px-1 pt-2 font-light">Sürekli / Tam Zamanlı</span>
+                </div>
+
+                <div class="flex flex-col lg:flex-row justify-center items-center pb-4">
+                    <span class="p-3 rounded-full bg-gray-700">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="19" viewBox="0 0 16 19">
+                            <g fill="none" fill-rule="evenodd">
+                                <g fill="#FFF">
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <path d="M10 1c1.87 0 3.672.685 5.053 1.92 1.382 1.233 2.243 2.93 2.415 4.753.163 1.723-.3 3.443-1.302 4.86l-.183.247-5.32 6.897c-.156.204-.401.323-.662.323-.223 0-.435-.088-.59-.24l-.072-.083-5.32-6.897C2.89 11.318 2.36 9.497 2.532 7.673c.171-1.824 1.033-3.52 2.414-4.754C6.328 1.685 8.13 1 10 1zm0 1.948c-1.392 0-2.732.509-3.756 1.425-1.016.907-1.647 2.15-1.773 3.483-.117 1.244.213 2.485.93 3.517l.16.218 4.44 5.755 4.44-5.755c.771-1.001 1.16-2.227 1.106-3.469l-.019-.266c-.125-1.334-.756-2.576-1.773-3.484-1.023-.915-2.363-1.424-3.755-1.424zM10 4c1.933 0 3.5 1.567 3.5 3.5S11.933 11 10 11 6.5 9.433 6.5 7.5 8.067 4 10 4zm0 2c-.828 0-1.5.672-1.5 1.5S9.172 9 10 9s1.5-.672 1.5-1.5S10.828 6 10 6z" transform="translate(-1030 -962) translate(998 670) translate(20 281) translate(10 10)"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </span>
+                    <span class="text-center px-5 pt-2 font-light">İstanbul, Kadıköy</span>
+                </div>
+            </div>
+
+            <div class="flex justify-end mt-4">
+                <p class="text-right md:mb-2 lg:mb-0 font-bold">Detaylı İncele </p>
+                <svg class="text-orange-300 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                </svg>
+                </div>
+                </div>
+            </div>
+        </div>
+
+         <!-- Card 2 !-->
+         <div class="flex bg-white shadow-md w-96 lg:w-80 rounded-xl">
+            <div class="h-full overflow-hidden">
+                <div class="p-6">
+                    <p class="text-sm text-right font-light mb-2">11 Eylül 2020</p>
+                    <p class="text-lg text-yellow-500 font-bold">Pozisyon</p>
+                    <p class="text-xl font-bold mb-8">Endeks Okuma Görevlisi</p>
+                    <p class="leading-relaxed mb-8 font-extralight">Lorem ipsum dolor sit amet, consect <br> adipisicing elit consect stiple... </p>
+        
+            <div class="flex lg:flex-col">
+                <div class="flex flex-col lg:flex-row items-center justify-center pb-4">
+                    <span class="p-3 rounded-full bg-gray-700">
+                        <svg class="fill-current text-purple-700" xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17">
+                            <g fill="none" fill-rule="evenodd">
+                                <g fill="#FFF">
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <path d="M3.643 5.218c-.005-.902.016-1.803.016-2.703.004-.083.011-.164.034-.245.073-.26.263-.479.511-.586.097-.042.196-.063.3-.074 3.662-.124 7.33-.124 10.993 0 .103.011.202.032.299.074.228.099.409.292.492.527.028.079.042.159.051.242.03.897.017 1.796.008 2.694.93.02 1.86.048 2.79.089.08.01.155.023.23.05.25.092.451.292.542.542.015.045.027.089.036.133.01.058.016.117.018.177v10.87c-.004.106-.017.208-.054.309-.09.25-.291.45-.542.542-.1.036-.202.05-.309.054H.942c-.107-.004-.208-.018-.31-.054-.25-.092-.45-.291-.541-.542-.037-.101-.05-.203-.055-.31V6.137c.004-.081.012-.158.032-.236.006-.025.014-.049.023-.073.09-.25.291-.45.542-.541.1-.037.202-.05.309-.055.9 0 1.8-.006 2.701-.014zm14.51 5.648l-5.463 1.093-.003.027c-.04.264-.122.523-.239.765-.14.295-.337.562-.573.788-.237.227-.515.41-.817.537-.335.141-.695.214-1.058.214-.363 0-.724-.073-1.058-.214-.302-.128-.58-.31-.817-.537-.236-.226-.432-.493-.573-.788-.117-.242-.198-.501-.239-.765 0-.01-.002-.019-.003-.027l-5.462-1.093v5.236h16.304v-5.236zm-8.177-.2c-.136.006-.266.037-.387.1-.236.12-.413.343-.471.602-.025.105-.03.214-.016.32.012.089.036.175.072.257.046.1.109.19.186.267.078.078.168.141.268.186.11.05.228.077.348.08.12.003.242-.018.355-.063.102-.04.196-.099.278-.172.08-.074.149-.161.198-.259.04-.079.069-.163.085-.25.02-.114.018-.231-.005-.344-.05-.253-.214-.475-.437-.604-.116-.066-.246-.105-.38-.116-.03-.002-.061-.003-.094-.003zM4.57 7.044H1.848v1.975l5.818 1.164c.26-.436.644-.797 1.097-1.03.258-.13.537-.222.825-.266.113-.018.227-.025.343-.03h.139c.115.005.23.012.343.03.288.044.566.135.825.267.453.232.836.593 1.097 1.03l5.818-1.165V7.043h-2.719c-3.618.121-7.241 0-10.863 0zm9.959-1.92V3.42H5.472v1.776c3.02-.041 6.039-.097 9.057-.073z" transform="translate(-113 -461) translate(83 269) translate(20 181) translate(10 10)"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </span>   
+                    <span class="text-center px-3 pt-2 font-light">Yeni Mezun</span>
+                </div>
+            
+                <div class="flex flex-col lg:flex-row justify-center items-center pb-4">
+                    <span class="p-3 rounded-full bg-gray-700">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                            <g fill="none" fill-rule="evenodd">
+                                <g fill="#FFF">
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <path d="M9.903 9.903h2.201c.607 0 1.1.488 1.1 1.1 0 .608-.488 1.101-1.1 1.101h-3.3c-.303 0-.577-.12-.776-.318-.202-.203-.325-.476-.325-.772V6.593c0-.602.489-1.09 1.1-1.09.608 0 1.1.496 1.1 1.09v3.31zM12.466.34c5.282 1.415 8.417 6.844 7 12.126-1.415 5.282-6.843 8.417-12.125 7C2.059 18.052-1.075 12.624.34 7.342S7.184-1.075 12.466.34zm-.57 2.125c-4.107-1.1-8.33 1.338-9.43 5.445-1.102 4.108 1.337 8.33 5.444 9.432 4.108 1.1 8.33-1.337 9.432-5.445 1.1-4.108-1.337-8.331-5.445-9.432z" transform="translate(-723 -510) translate(693 269) translate(20 231) translate(10 10)"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>     
+                    </span>
+                    <span class="text-center px-1 pt-2 font-light">Sürekli / Tam Zamanlı</span>
+                </div>
+
+                <div class="flex flex-col lg:flex-row justify-center items-center pb-4">
+                    <span class="p-3 rounded-full bg-gray-700">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="19" viewBox="0 0 16 19">
+                            <g fill="none" fill-rule="evenodd">
+                                <g fill="#FFF">
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <path d="M10 1c1.87 0 3.672.685 5.053 1.92 1.382 1.233 2.243 2.93 2.415 4.753.163 1.723-.3 3.443-1.302 4.86l-.183.247-5.32 6.897c-.156.204-.401.323-.662.323-.223 0-.435-.088-.59-.24l-.072-.083-5.32-6.897C2.89 11.318 2.36 9.497 2.532 7.673c.171-1.824 1.033-3.52 2.414-4.754C6.328 1.685 8.13 1 10 1zm0 1.948c-1.392 0-2.732.509-3.756 1.425-1.016.907-1.647 2.15-1.773 3.483-.117 1.244.213 2.485.93 3.517l.16.218 4.44 5.755 4.44-5.755c.771-1.001 1.16-2.227 1.106-3.469l-.019-.266c-.125-1.334-.756-2.576-1.773-3.484-1.023-.915-2.363-1.424-3.755-1.424zM10 4c1.933 0 3.5 1.567 3.5 3.5S11.933 11 10 11 6.5 9.433 6.5 7.5 8.067 4 10 4zm0 2c-.828 0-1.5.672-1.5 1.5S9.172 9 10 9s1.5-.672 1.5-1.5S10.828 6 10 6z" transform="translate(-1030 -962) translate(998 670) translate(20 281) translate(10 10)"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </span>
+                    <span class="text-center px-5 pt-2 font-light">İstanbul, Kadıköy</span>
+                </div>
+            </div>
+
+            <div class="flex justify-end mt-4">
+                <p class="text-right md:mb-2 lg:mb-0 font-bold">Detaylı İncele </p>
+                <svg class="text-orange-300 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                </svg>
+                </div>
+                </div>
+            </div>
+        </div>
+
+          <!-- Card 3 !-->
+          <div class="flex bg-white shadow-md w-96 lg:w-80 rounded-xl">
+            <div class="h-full overflow-hidden">
+                <div class="p-6">
+                    <p class="text-sm text-right font-light mb-2">11 Eylül 2020</p>
+                    <p class="text-lg text-yellow-500 font-bold">Pozisyon</p>
+                    <p class="text-xl font-bold mb-8">Endeks Okuma Görevlisi</p>
+                    <p class="leading-relaxed mb-8 font-extralight">Lorem ipsum dolor sit amet, consect <br> adipisicing elit consect stiple... </p>
+        
+            <div class="flex lg:flex-col">
+                <div class="flex flex-col lg:flex-row items-center justify-center pb-4">
+                    <span class="p-3 rounded-full bg-gray-700">
+                        <svg class="fill-current text-purple-700" xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17">
+                            <g fill="none" fill-rule="evenodd">
+                                <g fill="#FFF">
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <path d="M3.643 5.218c-.005-.902.016-1.803.016-2.703.004-.083.011-.164.034-.245.073-.26.263-.479.511-.586.097-.042.196-.063.3-.074 3.662-.124 7.33-.124 10.993 0 .103.011.202.032.299.074.228.099.409.292.492.527.028.079.042.159.051.242.03.897.017 1.796.008 2.694.93.02 1.86.048 2.79.089.08.01.155.023.23.05.25.092.451.292.542.542.015.045.027.089.036.133.01.058.016.117.018.177v10.87c-.004.106-.017.208-.054.309-.09.25-.291.45-.542.542-.1.036-.202.05-.309.054H.942c-.107-.004-.208-.018-.31-.054-.25-.092-.45-.291-.541-.542-.037-.101-.05-.203-.055-.31V6.137c.004-.081.012-.158.032-.236.006-.025.014-.049.023-.073.09-.25.291-.45.542-.541.1-.037.202-.05.309-.055.9 0 1.8-.006 2.701-.014zm14.51 5.648l-5.463 1.093-.003.027c-.04.264-.122.523-.239.765-.14.295-.337.562-.573.788-.237.227-.515.41-.817.537-.335.141-.695.214-1.058.214-.363 0-.724-.073-1.058-.214-.302-.128-.58-.31-.817-.537-.236-.226-.432-.493-.573-.788-.117-.242-.198-.501-.239-.765 0-.01-.002-.019-.003-.027l-5.462-1.093v5.236h16.304v-5.236zm-8.177-.2c-.136.006-.266.037-.387.1-.236.12-.413.343-.471.602-.025.105-.03.214-.016.32.012.089.036.175.072.257.046.1.109.19.186.267.078.078.168.141.268.186.11.05.228.077.348.08.12.003.242-.018.355-.063.102-.04.196-.099.278-.172.08-.074.149-.161.198-.259.04-.079.069-.163.085-.25.02-.114.018-.231-.005-.344-.05-.253-.214-.475-.437-.604-.116-.066-.246-.105-.38-.116-.03-.002-.061-.003-.094-.003zM4.57 7.044H1.848v1.975l5.818 1.164c.26-.436.644-.797 1.097-1.03.258-.13.537-.222.825-.266.113-.018.227-.025.343-.03h.139c.115.005.23.012.343.03.288.044.566.135.825.267.453.232.836.593 1.097 1.03l5.818-1.165V7.043h-2.719c-3.618.121-7.241 0-10.863 0zm9.959-1.92V3.42H5.472v1.776c3.02-.041 6.039-.097 9.057-.073z" transform="translate(-113 -461) translate(83 269) translate(20 181) translate(10 10)"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </span>   
+                    <span class="text-center px-3 pt-2 font-light">En Az 5 Yıl Tecrübe</span>
+                </div>
+            
+                <div class="flex flex-col lg:flex-row justify-center items-center pb-4">
+                    <span class="p-3 rounded-full bg-gray-700">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                            <g fill="none" fill-rule="evenodd">
+                                <g fill="#FFF">
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <path d="M9.903 9.903h2.201c.607 0 1.1.488 1.1 1.1 0 .608-.488 1.101-1.1 1.101h-3.3c-.303 0-.577-.12-.776-.318-.202-.203-.325-.476-.325-.772V6.593c0-.602.489-1.09 1.1-1.09.608 0 1.1.496 1.1 1.09v3.31zM12.466.34c5.282 1.415 8.417 6.844 7 12.126-1.415 5.282-6.843 8.417-12.125 7C2.059 18.052-1.075 12.624.34 7.342S7.184-1.075 12.466.34zm-.57 2.125c-4.107-1.1-8.33 1.338-9.43 5.445-1.102 4.108 1.337 8.33 5.444 9.432 4.108 1.1 8.33-1.337 9.432-5.445 1.1-4.108-1.337-8.331-5.445-9.432z" transform="translate(-723 -510) translate(693 269) translate(20 231) translate(10 10)"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>     
+                    </span>
+                    <span class="text-center px-1 pt-2 font-light">Sürekli / Tam Zamanlı</span>
+                </div>
+
+                <div class="flex flex-col lg:flex-row justify-center items-center pb-4">
+                    <span class="p-3 rounded-full bg-gray-700">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="19" viewBox="0 0 16 19">
+                            <g fill="none" fill-rule="evenodd">
+                                <g fill="#FFF">
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <path d="M10 1c1.87 0 3.672.685 5.053 1.92 1.382 1.233 2.243 2.93 2.415 4.753.163 1.723-.3 3.443-1.302 4.86l-.183.247-5.32 6.897c-.156.204-.401.323-.662.323-.223 0-.435-.088-.59-.24l-.072-.083-5.32-6.897C2.89 11.318 2.36 9.497 2.532 7.673c.171-1.824 1.033-3.52 2.414-4.754C6.328 1.685 8.13 1 10 1zm0 1.948c-1.392 0-2.732.509-3.756 1.425-1.016.907-1.647 2.15-1.773 3.483-.117 1.244.213 2.485.93 3.517l.16.218 4.44 5.755 4.44-5.755c.771-1.001 1.16-2.227 1.106-3.469l-.019-.266c-.125-1.334-.756-2.576-1.773-3.484-1.023-.915-2.363-1.424-3.755-1.424zM10 4c1.933 0 3.5 1.567 3.5 3.5S11.933 11 10 11 6.5 9.433 6.5 7.5 8.067 4 10 4zm0 2c-.828 0-1.5.672-1.5 1.5S9.172 9 10 9s1.5-.672 1.5-1.5S10.828 6 10 6z" transform="translate(-1030 -962) translate(998 670) translate(20 281) translate(10 10)"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </span>
+                    <span class="text-center px-5 pt-2 font-light">İstanbul, Kadıköy</span>
+                </div>
+            </div>
+
+            <div class="flex justify-end mt-4">
+                <p class="text-right md:mb-2 lg:mb-0 font-bold">Detaylı İncele </p>
+                <svg class="text-orange-300 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                </svg>
+                </div>
+                </div>
+            </div>
+        </div>
+
+           <!-- Card 4 !-->
+        <div class="flex bg-white shadow-md w-96 lg:w-80 rounded-xl">
+            <div class="h-full overflow-hidden">
+                <div class="p-6">
+                    <p class="text-sm text-right font-light mb-2">11 Eylül 2020</p>
+                    <p class="text-lg text-yellow-500 font-bold">Pozisyon</p>
+                    <p class="text-xl font-bold mb-8">Endeks Okuma Görevlisi</p>
+                    <p class="leading-relaxed mb-8 font-extralight">Lorem ipsum dolor sit amet, consect <br> adipisicing elit consect stiple... </p>
+        
+            <div class="flex lg:flex-col">
+                <div class="flex flex-col lg:flex-row items-center justify-center pb-4">
+                    <span class="p-3 rounded-full bg-gray-700">
+                        <svg class="fill-current text-purple-700" xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17">
+                            <g fill="none" fill-rule="evenodd">
+                                <g fill="#FFF">
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <path d="M3.643 5.218c-.005-.902.016-1.803.016-2.703.004-.083.011-.164.034-.245.073-.26.263-.479.511-.586.097-.042.196-.063.3-.074 3.662-.124 7.33-.124 10.993 0 .103.011.202.032.299.074.228.099.409.292.492.527.028.079.042.159.051.242.03.897.017 1.796.008 2.694.93.02 1.86.048 2.79.089.08.01.155.023.23.05.25.092.451.292.542.542.015.045.027.089.036.133.01.058.016.117.018.177v10.87c-.004.106-.017.208-.054.309-.09.25-.291.45-.542.542-.1.036-.202.05-.309.054H.942c-.107-.004-.208-.018-.31-.054-.25-.092-.45-.291-.541-.542-.037-.101-.05-.203-.055-.31V6.137c.004-.081.012-.158.032-.236.006-.025.014-.049.023-.073.09-.25.291-.45.542-.541.1-.037.202-.05.309-.055.9 0 1.8-.006 2.701-.014zm14.51 5.648l-5.463 1.093-.003.027c-.04.264-.122.523-.239.765-.14.295-.337.562-.573.788-.237.227-.515.41-.817.537-.335.141-.695.214-1.058.214-.363 0-.724-.073-1.058-.214-.302-.128-.58-.31-.817-.537-.236-.226-.432-.493-.573-.788-.117-.242-.198-.501-.239-.765 0-.01-.002-.019-.003-.027l-5.462-1.093v5.236h16.304v-5.236zm-8.177-.2c-.136.006-.266.037-.387.1-.236.12-.413.343-.471.602-.025.105-.03.214-.016.32.012.089.036.175.072.257.046.1.109.19.186.267.078.078.168.141.268.186.11.05.228.077.348.08.12.003.242-.018.355-.063.102-.04.196-.099.278-.172.08-.074.149-.161.198-.259.04-.079.069-.163.085-.25.02-.114.018-.231-.005-.344-.05-.253-.214-.475-.437-.604-.116-.066-.246-.105-.38-.116-.03-.002-.061-.003-.094-.003zM4.57 7.044H1.848v1.975l5.818 1.164c.26-.436.644-.797 1.097-1.03.258-.13.537-.222.825-.266.113-.018.227-.025.343-.03h.139c.115.005.23.012.343.03.288.044.566.135.825.267.453.232.836.593 1.097 1.03l5.818-1.165V7.043h-2.719c-3.618.121-7.241 0-10.863 0zm9.959-1.92V3.42H5.472v1.776c3.02-.041 6.039-.097 9.057-.073z" transform="translate(-113 -461) translate(83 269) translate(20 181) translate(10 10)"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </span>   
+                    <span class="text-center px-3 pt-2 font-light">En Az 5 Yıl Tecrübe</span>
+                </div>
+            
+                <div class="flex flex-col lg:flex-row justify-center items-center pb-4">
+                    <span class="p-3 rounded-full bg-gray-700">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                            <g fill="none" fill-rule="evenodd">
+                                <g fill="#FFF">
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <path d="M9.903 9.903h2.201c.607 0 1.1.488 1.1 1.1 0 .608-.488 1.101-1.1 1.101h-3.3c-.303 0-.577-.12-.776-.318-.202-.203-.325-.476-.325-.772V6.593c0-.602.489-1.09 1.1-1.09.608 0 1.1.496 1.1 1.09v3.31zM12.466.34c5.282 1.415 8.417 6.844 7 12.126-1.415 5.282-6.843 8.417-12.125 7C2.059 18.052-1.075 12.624.34 7.342S7.184-1.075 12.466.34zm-.57 2.125c-4.107-1.1-8.33 1.338-9.43 5.445-1.102 4.108 1.337 8.33 5.444 9.432 4.108 1.1 8.33-1.337 9.432-5.445 1.1-4.108-1.337-8.331-5.445-9.432z" transform="translate(-723 -510) translate(693 269) translate(20 231) translate(10 10)"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>     
+                    </span>
+                    <span class="text-center px-1 pt-2 font-light">Sürekli / Tam Zamanlı</span>
+                </div>
+
+                <div class="flex flex-col lg:flex-row justify-center items-center pb-4">
+                    <span class="p-3 rounded-full bg-gray-700">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="19" viewBox="0 0 16 19">
+                            <g fill="none" fill-rule="evenodd">
+                                <g fill="#FFF">
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <path d="M10 1c1.87 0 3.672.685 5.053 1.92 1.382 1.233 2.243 2.93 2.415 4.753.163 1.723-.3 3.443-1.302 4.86l-.183.247-5.32 6.897c-.156.204-.401.323-.662.323-.223 0-.435-.088-.59-.24l-.072-.083-5.32-6.897C2.89 11.318 2.36 9.497 2.532 7.673c.171-1.824 1.033-3.52 2.414-4.754C6.328 1.685 8.13 1 10 1zm0 1.948c-1.392 0-2.732.509-3.756 1.425-1.016.907-1.647 2.15-1.773 3.483-.117 1.244.213 2.485.93 3.517l.16.218 4.44 5.755 4.44-5.755c.771-1.001 1.16-2.227 1.106-3.469l-.019-.266c-.125-1.334-.756-2.576-1.773-3.484-1.023-.915-2.363-1.424-3.755-1.424zM10 4c1.933 0 3.5 1.567 3.5 3.5S11.933 11 10 11 6.5 9.433 6.5 7.5 8.067 4 10 4zm0 2c-.828 0-1.5.672-1.5 1.5S9.172 9 10 9s1.5-.672 1.5-1.5S10.828 6 10 6z" transform="translate(-1030 -962) translate(998 670) translate(20 281) translate(10 10)"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </span>
+                    <span class="text-center px-5 pt-2 font-light">İstanbul, Kadıköy</span>
+                </div>
+            </div>
+
+            <div class="flex justify-end mt-4">
+                <p class="text-right md:mb-2 lg:mb-0 font-bold">Detaylı İncele </p>
+                <svg class="text-orange-300 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                </svg>
+                </div>
+                </div>
+            </div>
+        </div>
+
+          <!-- Card 5 !-->
+          <div class="flex bg-white shadow-md w-96 lg:w-80 rounded-xl">
+            <div class="h-full overflow-hidden">
+                <div class="p-6">
+                    <p class="text-sm text-right font-light mb-2">11 Eylül 2020</p>
+                    <p class="text-lg text-yellow-500 font-bold">Pozisyon</p>
+                    <p class="text-xl font-bold mb-8">Endeks Okuma Görevlisi</p>
+                    <p class="leading-relaxed mb-8 font-extralight">Lorem ipsum dolor sit amet, consect <br> adipisicing elit consect stiple... </p>
+        
+            <div class="flex lg:flex-col">
+                <div class="flex flex-col lg:flex-row items-center justify-center pb-4">
+                    <span class="p-3 rounded-full bg-gray-700">
+                        <svg class="fill-current text-purple-700" xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17">
+                            <g fill="none" fill-rule="evenodd">
+                                <g fill="#FFF">
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <path d="M3.643 5.218c-.005-.902.016-1.803.016-2.703.004-.083.011-.164.034-.245.073-.26.263-.479.511-.586.097-.042.196-.063.3-.074 3.662-.124 7.33-.124 10.993 0 .103.011.202.032.299.074.228.099.409.292.492.527.028.079.042.159.051.242.03.897.017 1.796.008 2.694.93.02 1.86.048 2.79.089.08.01.155.023.23.05.25.092.451.292.542.542.015.045.027.089.036.133.01.058.016.117.018.177v10.87c-.004.106-.017.208-.054.309-.09.25-.291.45-.542.542-.1.036-.202.05-.309.054H.942c-.107-.004-.208-.018-.31-.054-.25-.092-.45-.291-.541-.542-.037-.101-.05-.203-.055-.31V6.137c.004-.081.012-.158.032-.236.006-.025.014-.049.023-.073.09-.25.291-.45.542-.541.1-.037.202-.05.309-.055.9 0 1.8-.006 2.701-.014zm14.51 5.648l-5.463 1.093-.003.027c-.04.264-.122.523-.239.765-.14.295-.337.562-.573.788-.237.227-.515.41-.817.537-.335.141-.695.214-1.058.214-.363 0-.724-.073-1.058-.214-.302-.128-.58-.31-.817-.537-.236-.226-.432-.493-.573-.788-.117-.242-.198-.501-.239-.765 0-.01-.002-.019-.003-.027l-5.462-1.093v5.236h16.304v-5.236zm-8.177-.2c-.136.006-.266.037-.387.1-.236.12-.413.343-.471.602-.025.105-.03.214-.016.32.012.089.036.175.072.257.046.1.109.19.186.267.078.078.168.141.268.186.11.05.228.077.348.08.12.003.242-.018.355-.063.102-.04.196-.099.278-.172.08-.074.149-.161.198-.259.04-.079.069-.163.085-.25.02-.114.018-.231-.005-.344-.05-.253-.214-.475-.437-.604-.116-.066-.246-.105-.38-.116-.03-.002-.061-.003-.094-.003zM4.57 7.044H1.848v1.975l5.818 1.164c.26-.436.644-.797 1.097-1.03.258-.13.537-.222.825-.266.113-.018.227-.025.343-.03h.139c.115.005.23.012.343.03.288.044.566.135.825.267.453.232.836.593 1.097 1.03l5.818-1.165V7.043h-2.719c-3.618.121-7.241 0-10.863 0zm9.959-1.92V3.42H5.472v1.776c3.02-.041 6.039-.097 9.057-.073z" transform="translate(-113 -461) translate(83 269) translate(20 181) translate(10 10)"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </span>   
+                    <span class="text-center px-3 pt-2 font-light">En Az 2 Yıl Tecrübe</span>
+                </div>
+            
+                <div class="flex flex-col lg:flex-row justify-center items-center pb-4">
+                    <span class="p-3 rounded-full bg-gray-700">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                            <g fill="none" fill-rule="evenodd">
+                                <g fill="#FFF">
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <path d="M9.903 9.903h2.201c.607 0 1.1.488 1.1 1.1 0 .608-.488 1.101-1.1 1.101h-3.3c-.303 0-.577-.12-.776-.318-.202-.203-.325-.476-.325-.772V6.593c0-.602.489-1.09 1.1-1.09.608 0 1.1.496 1.1 1.09v3.31zM12.466.34c5.282 1.415 8.417 6.844 7 12.126-1.415 5.282-6.843 8.417-12.125 7C2.059 18.052-1.075 12.624.34 7.342S7.184-1.075 12.466.34zm-.57 2.125c-4.107-1.1-8.33 1.338-9.43 5.445-1.102 4.108 1.337 8.33 5.444 9.432 4.108 1.1 8.33-1.337 9.432-5.445 1.1-4.108-1.337-8.331-5.445-9.432z" transform="translate(-723 -510) translate(693 269) translate(20 231) translate(10 10)"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>     
+                    </span>
+                    <span class="text-center px-1 pt-2 font-light">Sürekli / Tam Zamanlı</span>
+                </div>
+
+                <div class="flex flex-col lg:flex-row justify-center items-center pb-4">
+                    <span class="p-3 rounded-full bg-gray-700">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="19" viewBox="0 0 16 19">
+                            <g fill="none" fill-rule="evenodd">
+                                <g fill="#FFF">
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <path d="M10 1c1.87 0 3.672.685 5.053 1.92 1.382 1.233 2.243 2.93 2.415 4.753.163 1.723-.3 3.443-1.302 4.86l-.183.247-5.32 6.897c-.156.204-.401.323-.662.323-.223 0-.435-.088-.59-.24l-.072-.083-5.32-6.897C2.89 11.318 2.36 9.497 2.532 7.673c.171-1.824 1.033-3.52 2.414-4.754C6.328 1.685 8.13 1 10 1zm0 1.948c-1.392 0-2.732.509-3.756 1.425-1.016.907-1.647 2.15-1.773 3.483-.117 1.244.213 2.485.93 3.517l.16.218 4.44 5.755 4.44-5.755c.771-1.001 1.16-2.227 1.106-3.469l-.019-.266c-.125-1.334-.756-2.576-1.773-3.484-1.023-.915-2.363-1.424-3.755-1.424zM10 4c1.933 0 3.5 1.567 3.5 3.5S11.933 11 10 11 6.5 9.433 6.5 7.5 8.067 4 10 4zm0 2c-.828 0-1.5.672-1.5 1.5S9.172 9 10 9s1.5-.672 1.5-1.5S10.828 6 10 6z" transform="translate(-1030 -962) translate(998 670) translate(20 281) translate(10 10)"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </span>
+                    <span class="text-center px-5 pt-2 font-light">İstanbul, Kadıköy</span>
+                </div>
+            </div>
+
+            <div class="flex justify-end mt-4">
+                <p class="text-right md:mb-2 lg:mb-0 font-bold">Detaylı İncele </p>
+                <svg class="text-orange-300 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                </svg>
+                </div>
+                </div>
+            </div>
+        </div>
+
+          <!-- Card 6 !-->
+          <div class="bg-white shadow-md w-96 lg:w-80 rounded-xl">
+            <div class="h-full overflow-hidden">
+                <div class="p-6">
+                    <p class="text-sm text-right font-light mb-2">11 Eylül 2020</p>
+                    <p class="text-lg text-yellow-500 font-bold">Pozisyon</p>
+                    <p class="text-xl font-bold mb-8">Endeks Okuma Görevlisi</p>
+                    <p class="leading-relaxed mb-8 font-extralight">Lorem ipsum dolor sit amet, consect <br> adipisicing elit consect stiple... </p>
+        
+            <div class="flex lg:flex-col">
+                <div class="flex flex-col lg:flex-row items-center justify-center pb-4">
+                    <span class="p-3 rounded-full bg-gray-700">
+                        <svg class="fill-current text-purple-700" xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17">
+                            <g fill="none" fill-rule="evenodd">
+                                <g fill="#FFF">
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <path d="M3.643 5.218c-.005-.902.016-1.803.016-2.703.004-.083.011-.164.034-.245.073-.26.263-.479.511-.586.097-.042.196-.063.3-.074 3.662-.124 7.33-.124 10.993 0 .103.011.202.032.299.074.228.099.409.292.492.527.028.079.042.159.051.242.03.897.017 1.796.008 2.694.93.02 1.86.048 2.79.089.08.01.155.023.23.05.25.092.451.292.542.542.015.045.027.089.036.133.01.058.016.117.018.177v10.87c-.004.106-.017.208-.054.309-.09.25-.291.45-.542.542-.1.036-.202.05-.309.054H.942c-.107-.004-.208-.018-.31-.054-.25-.092-.45-.291-.541-.542-.037-.101-.05-.203-.055-.31V6.137c.004-.081.012-.158.032-.236.006-.025.014-.049.023-.073.09-.25.291-.45.542-.541.1-.037.202-.05.309-.055.9 0 1.8-.006 2.701-.014zm14.51 5.648l-5.463 1.093-.003.027c-.04.264-.122.523-.239.765-.14.295-.337.562-.573.788-.237.227-.515.41-.817.537-.335.141-.695.214-1.058.214-.363 0-.724-.073-1.058-.214-.302-.128-.58-.31-.817-.537-.236-.226-.432-.493-.573-.788-.117-.242-.198-.501-.239-.765 0-.01-.002-.019-.003-.027l-5.462-1.093v5.236h16.304v-5.236zm-8.177-.2c-.136.006-.266.037-.387.1-.236.12-.413.343-.471.602-.025.105-.03.214-.016.32.012.089.036.175.072.257.046.1.109.19.186.267.078.078.168.141.268.186.11.05.228.077.348.08.12.003.242-.018.355-.063.102-.04.196-.099.278-.172.08-.074.149-.161.198-.259.04-.079.069-.163.085-.25.02-.114.018-.231-.005-.344-.05-.253-.214-.475-.437-.604-.116-.066-.246-.105-.38-.116-.03-.002-.061-.003-.094-.003zM4.57 7.044H1.848v1.975l5.818 1.164c.26-.436.644-.797 1.097-1.03.258-.13.537-.222.825-.266.113-.018.227-.025.343-.03h.139c.115.005.23.012.343.03.288.044.566.135.825.267.453.232.836.593 1.097 1.03l5.818-1.165V7.043h-2.719c-3.618.121-7.241 0-10.863 0zm9.959-1.92V3.42H5.472v1.776c3.02-.041 6.039-.097 9.057-.073z" transform="translate(-113 -461) translate(83 269) translate(20 181) translate(10 10)"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </span>   
+                    <span class="text-center px-3 pt-2 font-light">En Az 5 Yıl Tecrübe</span>
+                </div>
+            
+                <div class="flex flex-col lg:flex-row justify-center items-center pb-4">
+                    <span class="p-3 rounded-full bg-gray-700">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                            <g fill="none" fill-rule="evenodd">
+                                <g fill="#FFF">
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <path d="M9.903 9.903h2.201c.607 0 1.1.488 1.1 1.1 0 .608-.488 1.101-1.1 1.101h-3.3c-.303 0-.577-.12-.776-.318-.202-.203-.325-.476-.325-.772V6.593c0-.602.489-1.09 1.1-1.09.608 0 1.1.496 1.1 1.09v3.31zM12.466.34c5.282 1.415 8.417 6.844 7 12.126-1.415 5.282-6.843 8.417-12.125 7C2.059 18.052-1.075 12.624.34 7.342S7.184-1.075 12.466.34zm-.57 2.125c-4.107-1.1-8.33 1.338-9.43 5.445-1.102 4.108 1.337 8.33 5.444 9.432 4.108 1.1 8.33-1.337 9.432-5.445 1.1-4.108-1.337-8.331-5.445-9.432z" transform="translate(-723 -510) translate(693 269) translate(20 231) translate(10 10)"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>     
+                    </span>
+                    <span class="text-center px-1 pt-2 font-light">Sürekli / Tam Zamanlı</span>
+                </div>
+
+                <div class="flex flex-col lg:flex-row justify-center items-center pb-4">
+                    <span class="p-3 rounded-full bg-gray-700">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="19" viewBox="0 0 16 19">
+                            <g fill="none" fill-rule="evenodd">
+                                <g fill="#FFF">
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <path d="M10 1c1.87 0 3.672.685 5.053 1.92 1.382 1.233 2.243 2.93 2.415 4.753.163 1.723-.3 3.443-1.302 4.86l-.183.247-5.32 6.897c-.156.204-.401.323-.662.323-.223 0-.435-.088-.59-.24l-.072-.083-5.32-6.897C2.89 11.318 2.36 9.497 2.532 7.673c.171-1.824 1.033-3.52 2.414-4.754C6.328 1.685 8.13 1 10 1zm0 1.948c-1.392 0-2.732.509-3.756 1.425-1.016.907-1.647 2.15-1.773 3.483-.117 1.244.213 2.485.93 3.517l.16.218 4.44 5.755 4.44-5.755c.771-1.001 1.16-2.227 1.106-3.469l-.019-.266c-.125-1.334-.756-2.576-1.773-3.484-1.023-.915-2.363-1.424-3.755-1.424zM10 4c1.933 0 3.5 1.567 3.5 3.5S11.933 11 10 11 6.5 9.433 6.5 7.5 8.067 4 10 4zm0 2c-.828 0-1.5.672-1.5 1.5S9.172 9 10 9s1.5-.672 1.5-1.5S10.828 6 10 6z" transform="translate(-1030 -962) translate(998 670) translate(20 281) translate(10 10)"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </span>
+                    <span class="text-center px-5 pt-2 font-light">İstanbul, Kadıköy</span>
+                </div>
+            </div>
+
+            <div class="flex justify-end mt-4">
+                <p class="text-right md:mb-2 lg:mb-0 font-bold">Detaylı İncele </p>
+                <svg class="text-orange-300 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                </svg>
+                </div>
+                </div>
+            </div>
+        </div>
+
+          <!-- Card 7 !-->
+          <div class="hidden lg:block bg-white shadow-md w-96 lg:w-80 rounded-xl">
+            <div class="h-full overflow-hidden">
+                <div class="p-6">
+                    <p class="text-sm text-right font-light mb-2">11 Eylül 2020</p>
+                    <p class="text-lg text-yellow-500 font-bold">Pozisyon</p>
+                    <p class="text-xl font-bold mb-8">Endeks Okuma Görevlisi</p>
+                    <p class="leading-relaxed mb-8 font-extralight">Lorem ipsum dolor sit amet, consect <br> adipisicing elit consect stiple... </p>
+        
+            <div class="flex lg:flex-col">
+                <div class="flex flex-col lg:flex-row items-center justify-center pb-4">
+                    <span class="p-3 rounded-full bg-gray-700">
+                        <svg class="fill-current text-purple-700" xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17">
+                            <g fill="none" fill-rule="evenodd">
+                                <g fill="#FFF">
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <path d="M3.643 5.218c-.005-.902.016-1.803.016-2.703.004-.083.011-.164.034-.245.073-.26.263-.479.511-.586.097-.042.196-.063.3-.074 3.662-.124 7.33-.124 10.993 0 .103.011.202.032.299.074.228.099.409.292.492.527.028.079.042.159.051.242.03.897.017 1.796.008 2.694.93.02 1.86.048 2.79.089.08.01.155.023.23.05.25.092.451.292.542.542.015.045.027.089.036.133.01.058.016.117.018.177v10.87c-.004.106-.017.208-.054.309-.09.25-.291.45-.542.542-.1.036-.202.05-.309.054H.942c-.107-.004-.208-.018-.31-.054-.25-.092-.45-.291-.541-.542-.037-.101-.05-.203-.055-.31V6.137c.004-.081.012-.158.032-.236.006-.025.014-.049.023-.073.09-.25.291-.45.542-.541.1-.037.202-.05.309-.055.9 0 1.8-.006 2.701-.014zm14.51 5.648l-5.463 1.093-.003.027c-.04.264-.122.523-.239.765-.14.295-.337.562-.573.788-.237.227-.515.41-.817.537-.335.141-.695.214-1.058.214-.363 0-.724-.073-1.058-.214-.302-.128-.58-.31-.817-.537-.236-.226-.432-.493-.573-.788-.117-.242-.198-.501-.239-.765 0-.01-.002-.019-.003-.027l-5.462-1.093v5.236h16.304v-5.236zm-8.177-.2c-.136.006-.266.037-.387.1-.236.12-.413.343-.471.602-.025.105-.03.214-.016.32.012.089.036.175.072.257.046.1.109.19.186.267.078.078.168.141.268.186.11.05.228.077.348.08.12.003.242-.018.355-.063.102-.04.196-.099.278-.172.08-.074.149-.161.198-.259.04-.079.069-.163.085-.25.02-.114.018-.231-.005-.344-.05-.253-.214-.475-.437-.604-.116-.066-.246-.105-.38-.116-.03-.002-.061-.003-.094-.003zM4.57 7.044H1.848v1.975l5.818 1.164c.26-.436.644-.797 1.097-1.03.258-.13.537-.222.825-.266.113-.018.227-.025.343-.03h.139c.115.005.23.012.343.03.288.044.566.135.825.267.453.232.836.593 1.097 1.03l5.818-1.165V7.043h-2.719c-3.618.121-7.241 0-10.863 0zm9.959-1.92V3.42H5.472v1.776c3.02-.041 6.039-.097 9.057-.073z" transform="translate(-113 -461) translate(83 269) translate(20 181) translate(10 10)"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </span>   
+                    <span class="text-center px-3 pt-2 font-light">En Az 5 Yıl Tecrübe</span>
+                </div>
+            
+                <div class="flex flex-col lg:flex-row justify-center items-center pb-4">
+                    <span class="p-3 rounded-full bg-gray-700">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                            <g fill="none" fill-rule="evenodd">
+                                <g fill="#FFF">
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <path d="M9.903 9.903h2.201c.607 0 1.1.488 1.1 1.1 0 .608-.488 1.101-1.1 1.101h-3.3c-.303 0-.577-.12-.776-.318-.202-.203-.325-.476-.325-.772V6.593c0-.602.489-1.09 1.1-1.09.608 0 1.1.496 1.1 1.09v3.31zM12.466.34c5.282 1.415 8.417 6.844 7 12.126-1.415 5.282-6.843 8.417-12.125 7C2.059 18.052-1.075 12.624.34 7.342S7.184-1.075 12.466.34zm-.57 2.125c-4.107-1.1-8.33 1.338-9.43 5.445-1.102 4.108 1.337 8.33 5.444 9.432 4.108 1.1 8.33-1.337 9.432-5.445 1.1-4.108-1.337-8.331-5.445-9.432z" transform="translate(-723 -510) translate(693 269) translate(20 231) translate(10 10)"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>     
+                    </span>
+                    <span class="text-center px-1 pt-2 font-light">Sürekli / Tam Zamanlı</span>
+                </div>
+
+                <div class="flex flex-col lg:flex-row justify-center items-center pb-4">
+                    <span class="p-3 rounded-full bg-gray-700">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="19" viewBox="0 0 16 19">
+                            <g fill="none" fill-rule="evenodd">
+                                <g fill="#FFF">
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <path d="M10 1c1.87 0 3.672.685 5.053 1.92 1.382 1.233 2.243 2.93 2.415 4.753.163 1.723-.3 3.443-1.302 4.86l-.183.247-5.32 6.897c-.156.204-.401.323-.662.323-.223 0-.435-.088-.59-.24l-.072-.083-5.32-6.897C2.89 11.318 2.36 9.497 2.532 7.673c.171-1.824 1.033-3.52 2.414-4.754C6.328 1.685 8.13 1 10 1zm0 1.948c-1.392 0-2.732.509-3.756 1.425-1.016.907-1.647 2.15-1.773 3.483-.117 1.244.213 2.485.93 3.517l.16.218 4.44 5.755 4.44-5.755c.771-1.001 1.16-2.227 1.106-3.469l-.019-.266c-.125-1.334-.756-2.576-1.773-3.484-1.023-.915-2.363-1.424-3.755-1.424zM10 4c1.933 0 3.5 1.567 3.5 3.5S11.933 11 10 11 6.5 9.433 6.5 7.5 8.067 4 10 4zm0 2c-.828 0-1.5.672-1.5 1.5S9.172 9 10 9s1.5-.672 1.5-1.5S10.828 6 10 6z" transform="translate(-1030 -962) translate(998 670) translate(20 281) translate(10 10)"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </span>
+                    <span class="text-center px-5 pt-2 font-light">İstanbul, Kadıköy</span>
+                </div>
+            </div>
+
+            <div class="flex justify-end mt-4">
+                <p class="text-right md:mb-2 lg:mb-0 font-bold">Detaylı İncele </p>
+                <svg class="text-orange-300 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                </svg>
+                </div>
+                </div>
+            </div>
+        </div>
+
+          <!-- Card 8 !-->
+          <div class="hidden lg:block bg-white shadow-md w-96 lg:w-80 rounded-xl">
+            <div class="h-full overflow-hidden">
+                <div class="p-6">
+                    <p class="text-sm text-right font-light mb-2">11 Eylül 2020</p>
+                    <p class="text-lg text-yellow-500 font-bold">Pozisyon</p>
+                    <p class="text-xl font-bold mb-8">Endeks Okuma Görevlisi</p>
+                    <p class="leading-relaxed mb-8 font-extralight">Lorem ipsum dolor sit amet, consect <br> adipisicing elit consect stiple... </p>
+        
+            <div class="flex lg:flex-col">
+                <div class="flex flex-col lg:flex-row items-center justify-center pb-4">
+                    <span class="p-3 rounded-full bg-gray-700">
+                        <svg class="fill-current text-purple-700" xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17">
+                            <g fill="none" fill-rule="evenodd">
+                                <g fill="#FFF">
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <path d="M3.643 5.218c-.005-.902.016-1.803.016-2.703.004-.083.011-.164.034-.245.073-.26.263-.479.511-.586.097-.042.196-.063.3-.074 3.662-.124 7.33-.124 10.993 0 .103.011.202.032.299.074.228.099.409.292.492.527.028.079.042.159.051.242.03.897.017 1.796.008 2.694.93.02 1.86.048 2.79.089.08.01.155.023.23.05.25.092.451.292.542.542.015.045.027.089.036.133.01.058.016.117.018.177v10.87c-.004.106-.017.208-.054.309-.09.25-.291.45-.542.542-.1.036-.202.05-.309.054H.942c-.107-.004-.208-.018-.31-.054-.25-.092-.45-.291-.541-.542-.037-.101-.05-.203-.055-.31V6.137c.004-.081.012-.158.032-.236.006-.025.014-.049.023-.073.09-.25.291-.45.542-.541.1-.037.202-.05.309-.055.9 0 1.8-.006 2.701-.014zm14.51 5.648l-5.463 1.093-.003.027c-.04.264-.122.523-.239.765-.14.295-.337.562-.573.788-.237.227-.515.41-.817.537-.335.141-.695.214-1.058.214-.363 0-.724-.073-1.058-.214-.302-.128-.58-.31-.817-.537-.236-.226-.432-.493-.573-.788-.117-.242-.198-.501-.239-.765 0-.01-.002-.019-.003-.027l-5.462-1.093v5.236h16.304v-5.236zm-8.177-.2c-.136.006-.266.037-.387.1-.236.12-.413.343-.471.602-.025.105-.03.214-.016.32.012.089.036.175.072.257.046.1.109.19.186.267.078.078.168.141.268.186.11.05.228.077.348.08.12.003.242-.018.355-.063.102-.04.196-.099.278-.172.08-.074.149-.161.198-.259.04-.079.069-.163.085-.25.02-.114.018-.231-.005-.344-.05-.253-.214-.475-.437-.604-.116-.066-.246-.105-.38-.116-.03-.002-.061-.003-.094-.003zM4.57 7.044H1.848v1.975l5.818 1.164c.26-.436.644-.797 1.097-1.03.258-.13.537-.222.825-.266.113-.018.227-.025.343-.03h.139c.115.005.23.012.343.03.288.044.566.135.825.267.453.232.836.593 1.097 1.03l5.818-1.165V7.043h-2.719c-3.618.121-7.241 0-10.863 0zm9.959-1.92V3.42H5.472v1.776c3.02-.041 6.039-.097 9.057-.073z" transform="translate(-113 -461) translate(83 269) translate(20 181) translate(10 10)"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </span>   
+                    <span class="text-center px-3 pt-2 font-light">En Az 2 Yıl Tecrübe</span>
+                </div>
+            
+                <div class="flex flex-col lg:flex-row justify-center items-center pb-4">
+                    <span class="p-3 rounded-full bg-gray-700">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                            <g fill="none" fill-rule="evenodd">
+                                <g fill="#FFF">
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <path d="M9.903 9.903h2.201c.607 0 1.1.488 1.1 1.1 0 .608-.488 1.101-1.1 1.101h-3.3c-.303 0-.577-.12-.776-.318-.202-.203-.325-.476-.325-.772V6.593c0-.602.489-1.09 1.1-1.09.608 0 1.1.496 1.1 1.09v3.31zM12.466.34c5.282 1.415 8.417 6.844 7 12.126-1.415 5.282-6.843 8.417-12.125 7C2.059 18.052-1.075 12.624.34 7.342S7.184-1.075 12.466.34zm-.57 2.125c-4.107-1.1-8.33 1.338-9.43 5.445-1.102 4.108 1.337 8.33 5.444 9.432 4.108 1.1 8.33-1.337 9.432-5.445 1.1-4.108-1.337-8.331-5.445-9.432z" transform="translate(-723 -510) translate(693 269) translate(20 231) translate(10 10)"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>     
+                    </span>
+                    <span class="text-center px-1 pt-2 font-light">Sürekli / Tam Zamanlı</span>
+                </div>
+
+                <div class="flex flex-col lg:flex-row justify-center items-center pb-4">
+                    <span class="p-3 rounded-full bg-gray-700">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="19" viewBox="0 0 16 19">
+                            <g fill="none" fill-rule="evenodd">
+                                <g fill="#FFF">
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <path d="M10 1c1.87 0 3.672.685 5.053 1.92 1.382 1.233 2.243 2.93 2.415 4.753.163 1.723-.3 3.443-1.302 4.86l-.183.247-5.32 6.897c-.156.204-.401.323-.662.323-.223 0-.435-.088-.59-.24l-.072-.083-5.32-6.897C2.89 11.318 2.36 9.497 2.532 7.673c.171-1.824 1.033-3.52 2.414-4.754C6.328 1.685 8.13 1 10 1zm0 1.948c-1.392 0-2.732.509-3.756 1.425-1.016.907-1.647 2.15-1.773 3.483-.117 1.244.213 2.485.93 3.517l.16.218 4.44 5.755 4.44-5.755c.771-1.001 1.16-2.227 1.106-3.469l-.019-.266c-.125-1.334-.756-2.576-1.773-3.484-1.023-.915-2.363-1.424-3.755-1.424zM10 4c1.933 0 3.5 1.567 3.5 3.5S11.933 11 10 11 6.5 9.433 6.5 7.5 8.067 4 10 4zm0 2c-.828 0-1.5.672-1.5 1.5S9.172 9 10 9s1.5-.672 1.5-1.5S10.828 6 10 6z" transform="translate(-1030 -962) translate(998 670) translate(20 281) translate(10 10)"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </span>
+                    <span class="text-center px-5 pt-2 font-light">İstanbul, Kadıköy</span>
+                </div>
+            </div>
+
+            <div class="flex justify-end mt-4">
+                <p class="text-right md:mb-2 lg:mb-0 font-bold">Detaylı İncele </p>
+                <svg class="text-orange-300 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                </svg>
+                </div>
+                </div>
+            </div>
+        </div>
+
+          <!-- Card 9 !-->
+          <div class="hidden lg:block bg-white shadow-md w-96 lg:w-80 rounded-xl">
+            <div class="h-full overflow-hidden">
+                <div class="p-6">
+                    <p class="text-sm text-right font-light mb-2">11 Eylül 2020</p>
+                    <p class="text-lg text-yellow-500 font-bold">Pozisyon</p>
+                    <p class="text-xl font-bold mb-8">Endeks Okuma Görevlisi</p>
+                    <p class="leading-relaxed mb-8 font-extralight">Lorem ipsum dolor sit amet, consect <br> adipisicing elit consect stiple... </p>
+        
+            <div class="flex lg:flex-col">
+                <div class="flex flex-col lg:flex-row items-center justify-center pb-4">
+                    <span class="p-3 rounded-full bg-gray-700">
+                        <svg class="fill-current text-purple-700" xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17">
+                            <g fill="none" fill-rule="evenodd">
+                                <g fill="#FFF">
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <path d="M3.643 5.218c-.005-.902.016-1.803.016-2.703.004-.083.011-.164.034-.245.073-.26.263-.479.511-.586.097-.042.196-.063.3-.074 3.662-.124 7.33-.124 10.993 0 .103.011.202.032.299.074.228.099.409.292.492.527.028.079.042.159.051.242.03.897.017 1.796.008 2.694.93.02 1.86.048 2.79.089.08.01.155.023.23.05.25.092.451.292.542.542.015.045.027.089.036.133.01.058.016.117.018.177v10.87c-.004.106-.017.208-.054.309-.09.25-.291.45-.542.542-.1.036-.202.05-.309.054H.942c-.107-.004-.208-.018-.31-.054-.25-.092-.45-.291-.541-.542-.037-.101-.05-.203-.055-.31V6.137c.004-.081.012-.158.032-.236.006-.025.014-.049.023-.073.09-.25.291-.45.542-.541.1-.037.202-.05.309-.055.9 0 1.8-.006 2.701-.014zm14.51 5.648l-5.463 1.093-.003.027c-.04.264-.122.523-.239.765-.14.295-.337.562-.573.788-.237.227-.515.41-.817.537-.335.141-.695.214-1.058.214-.363 0-.724-.073-1.058-.214-.302-.128-.58-.31-.817-.537-.236-.226-.432-.493-.573-.788-.117-.242-.198-.501-.239-.765 0-.01-.002-.019-.003-.027l-5.462-1.093v5.236h16.304v-5.236zm-8.177-.2c-.136.006-.266.037-.387.1-.236.12-.413.343-.471.602-.025.105-.03.214-.016.32.012.089.036.175.072.257.046.1.109.19.186.267.078.078.168.141.268.186.11.05.228.077.348.08.12.003.242-.018.355-.063.102-.04.196-.099.278-.172.08-.074.149-.161.198-.259.04-.079.069-.163.085-.25.02-.114.018-.231-.005-.344-.05-.253-.214-.475-.437-.604-.116-.066-.246-.105-.38-.116-.03-.002-.061-.003-.094-.003zM4.57 7.044H1.848v1.975l5.818 1.164c.26-.436.644-.797 1.097-1.03.258-.13.537-.222.825-.266.113-.018.227-.025.343-.03h.139c.115.005.23.012.343.03.288.044.566.135.825.267.453.232.836.593 1.097 1.03l5.818-1.165V7.043h-2.719c-3.618.121-7.241 0-10.863 0zm9.959-1.92V3.42H5.472v1.776c3.02-.041 6.039-.097 9.057-.073z" transform="translate(-113 -461) translate(83 269) translate(20 181) translate(10 10)"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </span>   
+                    <span class="text-center px-3 pt-2 font-light">En Az 2 Yıl Tecrübe</span>
+                </div>
+            
+                <div class="flex flex-col lg:flex-row justify-center items-center pb-4">
+                    <span class="p-3 rounded-full bg-gray-700">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                            <g fill="none" fill-rule="evenodd">
+                                <g fill="#FFF">
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <path d="M9.903 9.903h2.201c.607 0 1.1.488 1.1 1.1 0 .608-.488 1.101-1.1 1.101h-3.3c-.303 0-.577-.12-.776-.318-.202-.203-.325-.476-.325-.772V6.593c0-.602.489-1.09 1.1-1.09.608 0 1.1.496 1.1 1.09v3.31zM12.466.34c5.282 1.415 8.417 6.844 7 12.126-1.415 5.282-6.843 8.417-12.125 7C2.059 18.052-1.075 12.624.34 7.342S7.184-1.075 12.466.34zm-.57 2.125c-4.107-1.1-8.33 1.338-9.43 5.445-1.102 4.108 1.337 8.33 5.444 9.432 4.108 1.1 8.33-1.337 9.432-5.445 1.1-4.108-1.337-8.331-5.445-9.432z" transform="translate(-723 -510) translate(693 269) translate(20 231) translate(10 10)"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>     
+                    </span>
+                    <span class="text-center px-1 pt-2 font-light">Sürekli / Tam Zamanlı</span>
+                </div>
+
+                <div class="flex flex-col lg:flex-row justify-center items-center pb-4">
+                    <span class="p-3 rounded-full bg-gray-700">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="19" viewBox="0 0 16 19">
+                            <g fill="none" fill-rule="evenodd">
+                                <g fill="#FFF">
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <path d="M10 1c1.87 0 3.672.685 5.053 1.92 1.382 1.233 2.243 2.93 2.415 4.753.163 1.723-.3 3.443-1.302 4.86l-.183.247-5.32 6.897c-.156.204-.401.323-.662.323-.223 0-.435-.088-.59-.24l-.072-.083-5.32-6.897C2.89 11.318 2.36 9.497 2.532 7.673c.171-1.824 1.033-3.52 2.414-4.754C6.328 1.685 8.13 1 10 1zm0 1.948c-1.392 0-2.732.509-3.756 1.425-1.016.907-1.647 2.15-1.773 3.483-.117 1.244.213 2.485.93 3.517l.16.218 4.44 5.755 4.44-5.755c.771-1.001 1.16-2.227 1.106-3.469l-.019-.266c-.125-1.334-.756-2.576-1.773-3.484-1.023-.915-2.363-1.424-3.755-1.424zM10 4c1.933 0 3.5 1.567 3.5 3.5S11.933 11 10 11 6.5 9.433 6.5 7.5 8.067 4 10 4zm0 2c-.828 0-1.5.672-1.5 1.5S9.172 9 10 9s1.5-.672 1.5-1.5S10.828 6 10 6z" transform="translate(-1030 -962) translate(998 670) translate(20 281) translate(10 10)"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </span>
+                    <span class="text-center px-5 pt-2 font-light">İstanbul, Kadıköy</span>
+                </div>
+            </div>
+
+            <div class="flex justify-end mt-4">
+                <p class="text-right md:mb-2 lg:mb-0 font-bold">Detaylı İncele </p>
+                <svg class="text-orange-300 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                </svg>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 10 !-->
+        <div class="hidden lg:block bg-white shadow-md w-96 lg:w-80 rounded-xl">
+                <div class="h-full overflow-hidden">
+                    <div class="p-6">
+                        <p class="text-sm text-right font-light mb-2">11 Eylül 2020</p>
+                        <p class="text-lg text-yellow-500 font-bold">Pozisyon</p>
+                        <p class="text-xl font-bold mb-8">Endeks Okuma Görevlisi</p>
+                        <p class="leading-relaxed mb-8 font-extralight">Lorem ipsum dolor sit amet, consect <br> adipisicing elit consect stiple... </p>
+            
+                <div class="flex lg:flex-col">
+                    <div class="flex flex-col lg:flex-row items-center justify-center pb-4">
+                        <span class="p-3 rounded-full bg-gray-700">
+                            <svg class="fill-current text-purple-700" xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17">
+                                <g fill="none" fill-rule="evenodd">
+                                    <g fill="#FFF">
+                                        <g>
+                                            <g>
+                                                <g>
+                                                    <path d="M3.643 5.218c-.005-.902.016-1.803.016-2.703.004-.083.011-.164.034-.245.073-.26.263-.479.511-.586.097-.042.196-.063.3-.074 3.662-.124 7.33-.124 10.993 0 .103.011.202.032.299.074.228.099.409.292.492.527.028.079.042.159.051.242.03.897.017 1.796.008 2.694.93.02 1.86.048 2.79.089.08.01.155.023.23.05.25.092.451.292.542.542.015.045.027.089.036.133.01.058.016.117.018.177v10.87c-.004.106-.017.208-.054.309-.09.25-.291.45-.542.542-.1.036-.202.05-.309.054H.942c-.107-.004-.208-.018-.31-.054-.25-.092-.45-.291-.541-.542-.037-.101-.05-.203-.055-.31V6.137c.004-.081.012-.158.032-.236.006-.025.014-.049.023-.073.09-.25.291-.45.542-.541.1-.037.202-.05.309-.055.9 0 1.8-.006 2.701-.014zm14.51 5.648l-5.463 1.093-.003.027c-.04.264-.122.523-.239.765-.14.295-.337.562-.573.788-.237.227-.515.41-.817.537-.335.141-.695.214-1.058.214-.363 0-.724-.073-1.058-.214-.302-.128-.58-.31-.817-.537-.236-.226-.432-.493-.573-.788-.117-.242-.198-.501-.239-.765 0-.01-.002-.019-.003-.027l-5.462-1.093v5.236h16.304v-5.236zm-8.177-.2c-.136.006-.266.037-.387.1-.236.12-.413.343-.471.602-.025.105-.03.214-.016.32.012.089.036.175.072.257.046.1.109.19.186.267.078.078.168.141.268.186.11.05.228.077.348.08.12.003.242-.018.355-.063.102-.04.196-.099.278-.172.08-.074.149-.161.198-.259.04-.079.069-.163.085-.25.02-.114.018-.231-.005-.344-.05-.253-.214-.475-.437-.604-.116-.066-.246-.105-.38-.116-.03-.002-.061-.003-.094-.003zM4.57 7.044H1.848v1.975l5.818 1.164c.26-.436.644-.797 1.097-1.03.258-.13.537-.222.825-.266.113-.018.227-.025.343-.03h.139c.115.005.23.012.343.03.288.044.566.135.825.267.453.232.836.593 1.097 1.03l5.818-1.165V7.043h-2.719c-3.618.121-7.241 0-10.863 0zm9.959-1.92V3.42H5.472v1.776c3.02-.041 6.039-.097 9.057-.073z" transform="translate(-113 -461) translate(83 269) translate(20 181) translate(10 10)"/>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                        </span>   
+                        <span class="text-center px-3 pt-2 font-light">En Az 2 Yıl Tecrübe</span>
+                    </div>
+                
+                    <div class="flex flex-col lg:flex-row justify-center items-center pb-4">
+                        <span class="p-3 rounded-full bg-gray-700">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                <g fill="none" fill-rule="evenodd">
+                                    <g fill="#FFF">
+                                        <g>
+                                            <g>
+                                                <g>
+                                                    <path d="M9.903 9.903h2.201c.607 0 1.1.488 1.1 1.1 0 .608-.488 1.101-1.1 1.101h-3.3c-.303 0-.577-.12-.776-.318-.202-.203-.325-.476-.325-.772V6.593c0-.602.489-1.09 1.1-1.09.608 0 1.1.496 1.1 1.09v3.31zM12.466.34c5.282 1.415 8.417 6.844 7 12.126-1.415 5.282-6.843 8.417-12.125 7C2.059 18.052-1.075 12.624.34 7.342S7.184-1.075 12.466.34zm-.57 2.125c-4.107-1.1-8.33 1.338-9.43 5.445-1.102 4.108 1.337 8.33 5.444 9.432 4.108 1.1 8.33-1.337 9.432-5.445 1.1-4.108-1.337-8.331-5.445-9.432z" transform="translate(-723 -510) translate(693 269) translate(20 231) translate(10 10)"/>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>     
+                        </span>
+                        <span class="text-center px-1 pt-2 font-light">Sürekli / Tam Zamanlı</span>
+                    </div>
+    
+                    <div class="flex flex-col lg:flex-row justify-center items-center pb-4">
+                        <span class="p-3 rounded-full bg-gray-700">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="19" viewBox="0 0 16 19">
+                                <g fill="none" fill-rule="evenodd">
+                                    <g fill="#FFF">
+                                        <g>
+                                            <g>
+                                                <g>
+                                                    <path d="M10 1c1.87 0 3.672.685 5.053 1.92 1.382 1.233 2.243 2.93 2.415 4.753.163 1.723-.3 3.443-1.302 4.86l-.183.247-5.32 6.897c-.156.204-.401.323-.662.323-.223 0-.435-.088-.59-.24l-.072-.083-5.32-6.897C2.89 11.318 2.36 9.497 2.532 7.673c.171-1.824 1.033-3.52 2.414-4.754C6.328 1.685 8.13 1 10 1zm0 1.948c-1.392 0-2.732.509-3.756 1.425-1.016.907-1.647 2.15-1.773 3.483-.117 1.244.213 2.485.93 3.517l.16.218 4.44 5.755 4.44-5.755c.771-1.001 1.16-2.227 1.106-3.469l-.019-.266c-.125-1.334-.756-2.576-1.773-3.484-1.023-.915-2.363-1.424-3.755-1.424zM10 4c1.933 0 3.5 1.567 3.5 3.5S11.933 11 10 11 6.5 9.433 6.5 7.5 8.067 4 10 4zm0 2c-.828 0-1.5.672-1.5 1.5S9.172 9 10 9s1.5-.672 1.5-1.5S10.828 6 10 6z" transform="translate(-1030 -962) translate(998 670) translate(20 281) translate(10 10)"/>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                        </span>
+                        <span class="text-center px-5 pt-2 font-light">İstanbul, Kadıköy</span>
+                    </div>
+                </div>
+    
+                <div class="flex justify-end mt-4">
+                    <p class="text-right md:mb-2 lg:mb-0 font-bold">Detaylı İncele </p>
+                    <svg class="text-orange-300 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                    </svg>
+                    </div>
+                    </div>
+                </div>
+        </div>
+
+        <!-- Card 11 !-->
+         <div class="hidden lg:block bg-white shadow-md w-96 lg:w-80 rounded-xl">
+                <div class="h-full overflow-hidden">
+                    <div class="p-6">
+                        <p class="text-sm text-right font-light mb-2">11 Eylül 2020</p>
+                        <p class="text-lg text-yellow-500 font-bold">Pozisyon</p>
+                        <p class="text-xl font-bold mb-8">Endeks Okuma Görevlisi</p>
+                        <p class="leading-relaxed mb-8 font-extralight">Lorem ipsum dolor sit amet, consect <br> adipisicing elit consect stiple... </p>
+            
+                <div class="flex lg:flex-col">
+                    <div class="flex flex-col lg:flex-row items-center justify-center pb-4">
+                        <span class="p-3 rounded-full bg-gray-700">
+                            <svg class="fill-current text-purple-700" xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17">
+                                <g fill="none" fill-rule="evenodd">
+                                    <g fill="#FFF">
+                                        <g>
+                                            <g>
+                                                <g>
+                                                    <path d="M3.643 5.218c-.005-.902.016-1.803.016-2.703.004-.083.011-.164.034-.245.073-.26.263-.479.511-.586.097-.042.196-.063.3-.074 3.662-.124 7.33-.124 10.993 0 .103.011.202.032.299.074.228.099.409.292.492.527.028.079.042.159.051.242.03.897.017 1.796.008 2.694.93.02 1.86.048 2.79.089.08.01.155.023.23.05.25.092.451.292.542.542.015.045.027.089.036.133.01.058.016.117.018.177v10.87c-.004.106-.017.208-.054.309-.09.25-.291.45-.542.542-.1.036-.202.05-.309.054H.942c-.107-.004-.208-.018-.31-.054-.25-.092-.45-.291-.541-.542-.037-.101-.05-.203-.055-.31V6.137c.004-.081.012-.158.032-.236.006-.025.014-.049.023-.073.09-.25.291-.45.542-.541.1-.037.202-.05.309-.055.9 0 1.8-.006 2.701-.014zm14.51 5.648l-5.463 1.093-.003.027c-.04.264-.122.523-.239.765-.14.295-.337.562-.573.788-.237.227-.515.41-.817.537-.335.141-.695.214-1.058.214-.363 0-.724-.073-1.058-.214-.302-.128-.58-.31-.817-.537-.236-.226-.432-.493-.573-.788-.117-.242-.198-.501-.239-.765 0-.01-.002-.019-.003-.027l-5.462-1.093v5.236h16.304v-5.236zm-8.177-.2c-.136.006-.266.037-.387.1-.236.12-.413.343-.471.602-.025.105-.03.214-.016.32.012.089.036.175.072.257.046.1.109.19.186.267.078.078.168.141.268.186.11.05.228.077.348.08.12.003.242-.018.355-.063.102-.04.196-.099.278-.172.08-.074.149-.161.198-.259.04-.079.069-.163.085-.25.02-.114.018-.231-.005-.344-.05-.253-.214-.475-.437-.604-.116-.066-.246-.105-.38-.116-.03-.002-.061-.003-.094-.003zM4.57 7.044H1.848v1.975l5.818 1.164c.26-.436.644-.797 1.097-1.03.258-.13.537-.222.825-.266.113-.018.227-.025.343-.03h.139c.115.005.23.012.343.03.288.044.566.135.825.267.453.232.836.593 1.097 1.03l5.818-1.165V7.043h-2.719c-3.618.121-7.241 0-10.863 0zm9.959-1.92V3.42H5.472v1.776c3.02-.041 6.039-.097 9.057-.073z" transform="translate(-113 -461) translate(83 269) translate(20 181) translate(10 10)"/>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                        </span>   
+                        <span class="text-center px-3 pt-2 font-light">En Az 5 Yıl Tecrübe</span>
+                    </div>
+                
+                    <div class="flex flex-col lg:flex-row justify-center items-center pb-4">
+                        <span class="p-3 rounded-full bg-gray-700">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                <g fill="none" fill-rule="evenodd">
+                                    <g fill="#FFF">
+                                        <g>
+                                            <g>
+                                                <g>
+                                                    <path d="M9.903 9.903h2.201c.607 0 1.1.488 1.1 1.1 0 .608-.488 1.101-1.1 1.101h-3.3c-.303 0-.577-.12-.776-.318-.202-.203-.325-.476-.325-.772V6.593c0-.602.489-1.09 1.1-1.09.608 0 1.1.496 1.1 1.09v3.31zM12.466.34c5.282 1.415 8.417 6.844 7 12.126-1.415 5.282-6.843 8.417-12.125 7C2.059 18.052-1.075 12.624.34 7.342S7.184-1.075 12.466.34zm-.57 2.125c-4.107-1.1-8.33 1.338-9.43 5.445-1.102 4.108 1.337 8.33 5.444 9.432 4.108 1.1 8.33-1.337 9.432-5.445 1.1-4.108-1.337-8.331-5.445-9.432z" transform="translate(-723 -510) translate(693 269) translate(20 231) translate(10 10)"/>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>     
+                        </span>
+                        <span class="text-center px-1 pt-2 font-light">Sürekli / Tam Zamanlı</span>
+                    </div>
+    
+                    <div class="flex flex-col lg:flex-row justify-center items-center pb-4">
+                        <span class="p-3 rounded-full bg-gray-700">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="19" viewBox="0 0 16 19">
+                                <g fill="none" fill-rule="evenodd">
+                                    <g fill="#FFF">
+                                        <g>
+                                            <g>
+                                                <g>
+                                                    <path d="M10 1c1.87 0 3.672.685 5.053 1.92 1.382 1.233 2.243 2.93 2.415 4.753.163 1.723-.3 3.443-1.302 4.86l-.183.247-5.32 6.897c-.156.204-.401.323-.662.323-.223 0-.435-.088-.59-.24l-.072-.083-5.32-6.897C2.89 11.318 2.36 9.497 2.532 7.673c.171-1.824 1.033-3.52 2.414-4.754C6.328 1.685 8.13 1 10 1zm0 1.948c-1.392 0-2.732.509-3.756 1.425-1.016.907-1.647 2.15-1.773 3.483-.117 1.244.213 2.485.93 3.517l.16.218 4.44 5.755 4.44-5.755c.771-1.001 1.16-2.227 1.106-3.469l-.019-.266c-.125-1.334-.756-2.576-1.773-3.484-1.023-.915-2.363-1.424-3.755-1.424zM10 4c1.933 0 3.5 1.567 3.5 3.5S11.933 11 10 11 6.5 9.433 6.5 7.5 8.067 4 10 4zm0 2c-.828 0-1.5.672-1.5 1.5S9.172 9 10 9s1.5-.672 1.5-1.5S10.828 6 10 6z" transform="translate(-1030 -962) translate(998 670) translate(20 281) translate(10 10)"/>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                        </span>
+                        <span class="text-center px-5 pt-2 font-light">İstanbul, Kadıköy</span>
+                    </div>
+                </div>
+    
+                <div class="flex justify-end mt-4">
+                    <p class="text-right md:mb-2 lg:mb-0 font-bold">Detaylı İncele </p>
+                    <svg class="text-orange-300 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                    </svg>
+                    </div>
+                    </div>
+                </div>
+        </div>
+    
+        </div>
+ </section>
+
+<!-- Footer mobil !-->
+<footer class="text-gray-100 bg-[#231f20] lg:hidden">
+ <div class="max-w-7xl mx-auto py-6 px-6">
+    <div class="border-b flex items-center max-w-7xl mx-auto py-6 px-6">
+        Bizi Takip edin
+        <svg class="ml-2 mr-2 cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+            <g fill="none" fill-rule="evenodd">
+                <g fill="#E5EBF0">
+                    <g>
+                        <g>
+                            <g>
+                                <path d="M98.727 0C101.634 0 104 2.366 104 5.273v9.454c0 2.907-2.366 5.273-5.273 5.273h-9.454C86.366 20 84 17.634 84 14.727V5.273C84 2.366 86.366 0 89.273 0zm-1.758 3.516H91.03c-1.938 0-3.515 1.577-3.515 3.515v5.938c0 1.938 1.577 3.515 3.515 3.515h5.938c1.938 0 3.515-1.577 3.515-3.515V7.03c0-1.938-1.577-3.515-3.515-3.515zm0 1.171c1.292 0 2.344 1.052 2.344 2.344v5.938c0 1.292-1.052 2.344-2.344 2.344H91.03c-1.292 0-2.344-1.052-2.344-2.344V7.03c0-1.292 1.052-2.343 2.344-2.343zM94 7.07c-1.615 0-2.93 1.315-2.93 2.93 0 1.615 1.315 2.93 2.93 2.93 1.615 0 2.93-1.315 2.93-2.93 0-1.615-1.315-2.93-2.93-2.93zm0 1.172c.97 0 1.758.787 1.758 1.758 0 .97-.787 1.758-1.758 1.758-.97 0-1.758-.787-1.758-1.758 0-.97.787-1.758 1.758-1.758zm3.36-2.187c-.324 0-.587.262-.587.586 0 .323.263.586.586.586.324 0 .586-.263.586-.586 0-.324-.262-.586-.586-.586z" transform="translate(-1158 -1681) translate(0 1482) translate(83 199) translate(991)"/>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </svg>
+
+        <svg class="mr-2 cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+            <g fill="none" fill-rule="evenodd">
+                <g fill="#E5EBF0">
+                    <g>
+                        <g>
+                            <g>
+                                <path d="M136.07 0h-14.14C120.314 0 119 1.314 119 2.93v14.14c0 1.616 1.314 2.93 2.93 2.93h5.898v-7.07h-2.344V9.414h2.344V7.031c0-1.938 1.577-3.515 3.516-3.515h3.554V7.03h-3.554v2.383h3.554l-.585 3.516h-2.97V20h4.727c1.616 0 2.93-1.314 2.93-2.93V2.93c0-1.616-1.314-2.93-2.93-2.93z" transform="translate(-1193 -1681) translate(0 1482) translate(83 199) translate(991)"/>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </svg>
+
+        <svg class="mr-2 cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+            <g fill="none" fill-rule="evenodd">
+                <g fill="#E5EBF0">
+                    <g>
+                        <g>
+                            <g>
+                                <path d="M168.984 0C171.746 0 174 2.254 174 5.016v9.968c0 2.762-2.254 5.016-5.016 5.016H159c-2.746 0-5-2.254-5-5V5.016C154 2.254 156.254 0 159 0zm-4.975 5.397h-.045l-.104.001c-.566.005-2.722.032-4.241.142-.238.031-.762.047-1.238.571-.365.397-.476 1.286-.476 1.286s-.095 1.063-.095 2.11v.985c0 1.048.095 2.111.095 2.111s.095.89.476 1.286c.476.524 1.111.508 1.38.555.358.034 1.003.062 1.684.084l.411.013c1.097.03 2.16.046 2.16.046h.036c.321-.002 2.703-.024 4.329-.143.238-.031.762-.031 1.238-.555.365-.397.476-1.286.476-1.286s.095-1.063.095-2.11v-.985c0-1.048-.095-2.111-.095-2.111s-.095-.905-.476-1.302c-.476-.508-1.016-.524-1.254-.555-1.505-.11-3.66-.137-4.225-.142h-.104L164 5.396zm-1.295 2.635l3.365 1.841-3.365 1.81V8.032z" transform="translate(-1228 -1681) translate(0 1482) translate(83 199) translate(991)"/>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </svg>
+    </div>
+  </div>
+
+    <div class="max-w-7xl mx-auto py-6 px-6">
+      <div class=" border-b max-w-7xl mx-auto px-4">
+        <div class="under">Serbest Tüketiciler</div>
+        <div class="under pt-5 pb-4">Yetkili Elektirikçi Listesi</div>
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto py-6 px-6">
+        <div class="flex flex-col space-y-5 border-b">
+            <a href="#" class="px-4 text-xs text-gray-100 font-medium hover:text-gray-400">Site Haritası</a>
+            <a href="#" class="px-4 text-xs text-gray-100 font-medium hover:text-gray-400">Çerez Politikası</a>
+            <a href="#" class="px-4 text-xs text-gray-100 font-medium hover:text-gray-400">Bilgi Toplumu Hizmeti</a>
+            <a href="#" class="px-4 text-xs text-gray-100 font-medium hover:text-gray-400 pb-4">Kişisel Verilerin Korunması</a>
+        </div>
+    </div>
+
+
+    <div class="max-w-7xl mx-auto py-6 px-6">
+        <div class="border-b pb-4 max-w-7xl mx-auto px-4">
+            Yetkili Elektrikçiler için <span class="text-yellow-400 underline">Yeni bağlantı Portalı </span>
+        </div>
+    </div>
+
+    <div class="flex items-center justify-around">
+        <img class="w-48" src="./assets/whatsapp.png" alt="">
+        <div class="flex">
+            <svg class="mr-2 cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                <g fill="none" fill-rule="evenodd">
+                    <g fill="#FFC522">
+                        <g>
+                            <g>
+                                <g>
+                                    <g>
+                                        <path d="M4.813.104c.937 0 1.791.417 2.375 1.146l1.958 2.48c1.022 1.27.834 3.103-.395 4.166-.146.146-.291.25-.396.354.188.333.625.938 1.542 1.854.916.916 1.52 1.333 1.854 1.541.104-.104.228-.228.354-.395.562-.688 1.416-1.063 2.291-1.063.688 0 1.354.23 1.875.646l2.48 1.958c1.062.855 1.436 2.334.895 3.583-.355.813-.937 1.709-1.48 2.25-.833.834-2.02 1.272-3.416 1.272-2.916 0-6.625-1.896-9.687-4.959C.354 10.23-1.271 4.48 1.354 1.833 1.896 1.292 2.792.708 3.604.354c.397-.167.792-.25 1.209-.25zm0 1.792c-.166 0-.312.041-.478.104-.668.292-1.376.792-1.688 1.104-1.792 1.792-.25 6.605 3.687 10.543 2.833 2.833 6.125 4.437 8.416 4.437.875 0 1.625-.25 2.125-.75.313-.313.813-1.021 1.104-1.688.23-.5.083-1.084-.374-1.438l-2.479-1.958c-.23-.188-.479-.271-.75-.271-.333 0-.666.146-.916.417-.438.5-.75.854-.834.937-.166.167-.375.25-.625.25-.854 0-2.104-.938-3.396-2.23-1.645-1.666-2.73-3.27-1.979-4.02.083-.083.417-.396.938-.833.5-.417.562-1.146.167-1.667L5.772 2.354c-.251-.291-.605-.458-.96-.458zm12.541-.562c.146-.146.375-.146.521 0l.77.77c.146.146.146.376 0 .521l-1.749 1.75 1.77 1.75c.145.145.145.375 0 .52l-.771.771c-.146.146-.376.146-.521 0l-1.75-1.75-1.75 1.75c-.145.146-.375.146-.52 0l-.771-.77c-.125-.146-.125-.375 0-.501l1.75-1.75-1.75-1.75c-.145-.145-.145-.375 0-.52l.771-.77c.146-.147.376-.147.521 0l1.75 1.749z" transform="translate(-83 -1692) translate(0 1482) translate(83 199) translate(0 8) translate(0 3)"/>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </svg>    
+        <p class="text-sm"><span class="font-bold text-yellow-400 underline text-sm">186</span> Çağrı Merkezi</p>
+    </div>
+    </div>
+
+    <div class="relative bg-white">
+        <img class="absolute h-14 mt-6 ml-5" src="./assets/anket.png" alt="memnuniyet">
+        <img class="absolute pl-96 h-20" src="./assets/destek.png" alt="destek">
+    </div>
+</footer>
+
+<!-- Footer desktop !-->
+<footer class="text-gray-100 bg-[#231f20] hidden lg:block">
+    <div class="max-w-7xl mx-auto py-6">
+        <div class="flex items-center my-16">
+            <div class="w-64">
+                <img src="./assets/whatsapp.png" alt="">
+             </div>
+            <div class="">
+              <span class="under pl-80">Serbest Tüketiciler</span>
+              <span class="under pl-8">Yetkili Elektirikçi Listesi</span>
+            </div>
+        </div>
+
+        <div class="flex justify-between">
+            <div class="flex">
+                <svg class="mr-2 cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                    <g fill="none" fill-rule="evenodd">
+                        <g fill="#FFC522">
+                            <g>
+                                <g>
+                                    <g>
+                                        <g>
+                                            <path d="M4.813.104c.937 0 1.791.417 2.375 1.146l1.958 2.48c1.022 1.27.834 3.103-.395 4.166-.146.146-.291.25-.396.354.188.333.625.938 1.542 1.854.916.916 1.52 1.333 1.854 1.541.104-.104.228-.228.354-.395.562-.688 1.416-1.063 2.291-1.063.688 0 1.354.23 1.875.646l2.48 1.958c1.062.855 1.436 2.334.895 3.583-.355.813-.937 1.709-1.48 2.25-.833.834-2.02 1.272-3.416 1.272-2.916 0-6.625-1.896-9.687-4.959C.354 10.23-1.271 4.48 1.354 1.833 1.896 1.292 2.792.708 3.604.354c.397-.167.792-.25 1.209-.25zm0 1.792c-.166 0-.312.041-.478.104-.668.292-1.376.792-1.688 1.104-1.792 1.792-.25 6.605 3.687 10.543 2.833 2.833 6.125 4.437 8.416 4.437.875 0 1.625-.25 2.125-.75.313-.313.813-1.021 1.104-1.688.23-.5.083-1.084-.374-1.438l-2.479-1.958c-.23-.188-.479-.271-.75-.271-.333 0-.666.146-.916.417-.438.5-.75.854-.834.937-.166.167-.375.25-.625.25-.854 0-2.104-.938-3.396-2.23-1.645-1.666-2.73-3.27-1.979-4.02.083-.083.417-.396.938-.833.5-.417.562-1.146.167-1.667L5.772 2.354c-.251-.291-.605-.458-.96-.458zm12.541-.562c.146-.146.375-.146.521 0l.77.77c.146.146.146.376 0 .521l-1.749 1.75 1.77 1.75c.145.145.145.375 0 .52l-.771.771c-.146.146-.376.146-.521 0l-1.75-1.75-1.75 1.75c-.145.146-.375.146-.52 0l-.771-.77c-.125-.146-.125-.375 0-.501l1.75-1.75-1.75-1.75c-.145-.145-.145-.375 0-.52l.771-.77c.146-.147.376-.147.521 0l1.75 1.749z" transform="translate(-83 -1692) translate(0 1482) translate(83 199) translate(0 8) translate(0 3)"/>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </svg>    
+            <p class="text-sm"><span class="font-bold text-yellow-400 underline text-sm">186</span> Çağrı Merkezi</p>
+        </div>
+
+       <div class="flex">
+        <p class="mr-2 text-sm">Bizi Takip Edin</p>
+        <svg class="mr-2 cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+            <g fill="none" fill-rule="evenodd">
+                <g fill="#E5EBF0">
+                    <g>
+                        <g>
+                            <g>
+                                <path d="M98.727 0C101.634 0 104 2.366 104 5.273v9.454c0 2.907-2.366 5.273-5.273 5.273h-9.454C86.366 20 84 17.634 84 14.727V5.273C84 2.366 86.366 0 89.273 0zm-1.758 3.516H91.03c-1.938 0-3.515 1.577-3.515 3.515v5.938c0 1.938 1.577 3.515 3.515 3.515h5.938c1.938 0 3.515-1.577 3.515-3.515V7.03c0-1.938-1.577-3.515-3.515-3.515zm0 1.171c1.292 0 2.344 1.052 2.344 2.344v5.938c0 1.292-1.052 2.344-2.344 2.344H91.03c-1.292 0-2.344-1.052-2.344-2.344V7.03c0-1.292 1.052-2.343 2.344-2.343zM94 7.07c-1.615 0-2.93 1.315-2.93 2.93 0 1.615 1.315 2.93 2.93 2.93 1.615 0 2.93-1.315 2.93-2.93 0-1.615-1.315-2.93-2.93-2.93zm0 1.172c.97 0 1.758.787 1.758 1.758 0 .97-.787 1.758-1.758 1.758-.97 0-1.758-.787-1.758-1.758 0-.97.787-1.758 1.758-1.758zm3.36-2.187c-.324 0-.587.262-.587.586 0 .323.263.586.586.586.324 0 .586-.263.586-.586 0-.324-.262-.586-.586-.586z" transform="translate(-1158 -1681) translate(0 1482) translate(83 199) translate(991)"/>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </svg>
+
+        <svg class="mr-2 cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+            <g fill="none" fill-rule="evenodd">
+                <g fill="#E5EBF0">
+                    <g>
+                        <g>
+                            <g>
+                                <path d="M136.07 0h-14.14C120.314 0 119 1.314 119 2.93v14.14c0 1.616 1.314 2.93 2.93 2.93h5.898v-7.07h-2.344V9.414h2.344V7.031c0-1.938 1.577-3.515 3.516-3.515h3.554V7.03h-3.554v2.383h3.554l-.585 3.516h-2.97V20h4.727c1.616 0 2.93-1.314 2.93-2.93V2.93c0-1.616-1.314-2.93-2.93-2.93z" transform="translate(-1193 -1681) translate(0 1482) translate(83 199) translate(991)"/>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </svg>
+
+        <svg class="mr-2 cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+            <g fill="none" fill-rule="evenodd">
+                <g fill="#E5EBF0">
+                    <g>
+                        <g>
+                            <g>
+                                <path d="M168.984 0C171.746 0 174 2.254 174 5.016v9.968c0 2.762-2.254 5.016-5.016 5.016H159c-2.746 0-5-2.254-5-5V5.016C154 2.254 156.254 0 159 0zm-4.975 5.397h-.045l-.104.001c-.566.005-2.722.032-4.241.142-.238.031-.762.047-1.238.571-.365.397-.476 1.286-.476 1.286s-.095 1.063-.095 2.11v.985c0 1.048.095 2.111.095 2.111s.095.89.476 1.286c.476.524 1.111.508 1.38.555.358.034 1.003.062 1.684.084l.411.013c1.097.03 2.16.046 2.16.046h.036c.321-.002 2.703-.024 4.329-.143.238-.031.762-.031 1.238-.555.365-.397.476-1.286.476-1.286s.095-1.063.095-2.11v-.985c0-1.048-.095-2.111-.095-2.111s-.095-.905-.476-1.302c-.476-.508-1.016-.524-1.254-.555-1.505-.11-3.66-.137-4.225-.142h-.104L164 5.396zm-1.295 2.635l3.365 1.841-3.365 1.81V8.032z" transform="translate(-1228 -1681) translate(0 1482) translate(83 199) translate(991)"/>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </svg>
+       </div>
+       
+        </div>
+        
+        <hr class="h-px mt-2 bg-gray-700 border-none">
+        <div class="flex flex-col items-center justify-between mt-6 md:flex-row">
+            <div class="flex mt-4 md:m-0">
+                <div class="-mx-4">
+                    <a href="#" class="px-4 text-xs text-gray-100 font-medium hover:text-gray-400">Site Haritası</a>
+                    <a href="#" class="px-4 text-xs text-gray-100 font-medium hover:text-gray-400">Çerez Politikası</a>
+                    <a href="#" class="px-4 text-xs text-gray-100 font-medium hover:text-gray-400">Bilgi Toplumu Hizmeti</a>
+                    <a href="#" class="px-4 text-xs text-gray-100 font-medium hover:text-gray-400">Kişisel Verilerin Korunması</a>
+                </div>
+            </div>
+            <div>
+                <a href="#" class="text-xs font-bold text-gray-100 hover:text-gray-400">Yetkili Elektrikçiler İçin <span class="text-yellow-400 underline">Yeni Bağlantı Portalı</span></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</div>
+</body>
+</html>
